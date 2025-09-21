@@ -38,7 +38,10 @@ To run the tests for this project, navigate to the `tests` directory and use a t
 ```bash
 pytest tests/test_openalex.py
 ```
-
+or, running tests suppressing output capture (-s) to see print output  
+```bash
+python3 -m pytest -q -s tests/test_openalex.py
+``` 
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue for any enhancements or bug fixes.
 

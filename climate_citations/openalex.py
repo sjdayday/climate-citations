@@ -3,26 +3,36 @@ Lightweight OpenAlex client focused on Topics and Works.
 Adjust filter keys if OpenAlex filter names change (e.g. 'topics.id' vs 'topic.id').
 """
 from dataclasses import dataclass
-from typing import Dict, Iterable, List, Optional, Generator
+from typing import Dict, Generator, List, Optional
 import requests
 import time
+
+
+# primary client alias expected by tests
+try:
+    # prefer the concrete topic client in this package
+    from .openalex_topic_client import OpenAlexTopicClient as OpenAlexClient
+except Exception:
+    # fallback stub
+    class OpenAlexClient:
+        def __init__(self, *a, **kw):
+            raise RuntimeError("OpenAlexClient not available")
 
 
 @dataclass
 class Topic:
     id: str
-    display_name: str
+    display_name: Optional[str] = None
     level: Optional[int] = None
-    description: Optional[str] = None
 
 
 @dataclass
 class Work:
-    id: str  # OpenAlex ID (e.g. https://openalex.org/W1234567890)
+    id: str
     title: Optional[str] = None
-    year: Optional[int] = None
     referenced_works: Optional[List[str]] = None
-    # additional fields as needed
+    publication_year: Optional[int] = None
+    doi: Optional[str] = None
 
 
 class OpenAlexClient:
@@ -47,7 +57,6 @@ class OpenAlexClient:
             id=data.get("id") or tid,
             display_name=data.get("display_name"),
             level=data.get("level"),
-            description=data.get("description"),
         )
 
     def search_topics(self, query: str, per_page: int = 25, max_pages: int = 2) -> Generator[Topic, None, None]:
@@ -90,7 +99,7 @@ class OpenAlexClient:
                     Work(
                         id=w.get("id"),
                         title=w.get("title"),
-                        year=w.get("publication_year"),
+                        publication_year=w.get("publication_year"),
                         referenced_works=w.get("referenced_works") or []
                     )
                 )
