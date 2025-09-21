@@ -8,7 +8,7 @@ class OpenAlexTopicClient:
     """
     BASE = "https://api.openalex.org"
 
-    def __init__(self, mailto: Optional[str] = None, sleep_on_rate_limit: float = 1.0, session: Optional[requests.Session] = None):
+    def __init__(self, mailto: Optional[str] = None, sleep_on_rate_limit: float = 10.0, session: Optional[requests.Session] = None):
         self.mailto = mailto
         self.session = session or requests.Session()
         self.sleep_on_rate_limit = sleep_on_rate_limit

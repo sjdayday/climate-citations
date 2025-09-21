@@ -1,0 +1,304 @@
+{
+  "meta": {
+    "count": 202,
+    "db_response_time_ms": 22,
+    "page": 1,
+    "per_page": 3,
+    "groups_count": null
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/T10029",
+      "display_name": "Climate variability and models",
+      "description": "This cluster of papers encompasses a wide range of research on climate change, global warming, and variability, including studies on extreme events, climate modeling, precipitation extremes, ocean circulation, ENSO variability, Arctic amplification, and the hydrological cycle. It also addresses the impact of greenhouse gas emissions and the challenge of keeping global warming below 2\u00b0C.",
+      "keywords": [
+        "Climate Change",
+        "Global Warming",
+        "Extreme Events",
+        "Climate Modeling",
+        "Precipitation Extremes",
+        "Ocean Circulation",
+        "ENSO Variability",
+        "Arctic Amplification",
+        "Hydrological Cycle",
+        "Greenhouse Gas Emissions"
+      ],
+      "ids": {
+        "openalex": "https://openalex.org/T10029",
+        "wikipedia": "https://en.wikipedia.org/wiki/Climate_change"
+      },
+      "subfield": {
+        "id": "https://openalex.org/subfields/2306",
+        "display_name": "Global and Planetary Change"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/23",
+        "display_name": "Environmental Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      },
+      "siblings": [
+        {
+          "id": "https://openalex.org/T14279",
+          "display_name": "Academic Research and Education Studies"
+        },
+        {
+          "id": "https://openalex.org/T11524",
+          "display_name": "Advanced Aircraft Design and Technologies"
+        },
+        {
+          "id": "https://openalex.org/T10332",
+          "display_name": "Amphibian and Reptile Biology"
+        },
+        {
+          "id": "https://openalex.org/T10347",
+          "display_name": "Atmospheric aerosols and clouds"
+        },
+        {
+          "id": "https://openalex.org/T11588",
+          "display_name": "Atmospheric and Environmental Gas Dynamics"
+        },
+        {
+          "id": "https://openalex.org/T13530",
+          "display_name": "Climate Change and Environmental Impact"
+        },
+        {
+          "id": "https://openalex.org/T12615",
+          "display_name": "Climate Change and Geoengineering"
+        },
+        {
+          "id": "https://openalex.org/T14296",
+          "display_name": "Climate Change and Sustainable Development"
+        },
+        {
+          "id": "https://openalex.org/T10319",
+          "display_name": "Conservation, Biodiversity, and Resource Management"
+        },
+        {
+          "id": "https://openalex.org/T12916",
+          "display_name": "COVID-19 impact on air quality"
+        },
+        {
+          "id": "https://openalex.org/T13318",
+          "display_name": "Diverse Scientific Research in Ukraine"
+        },
+        {
+          "id": "https://openalex.org/T13377",
+          "display_name": "Ecosystem dynamics and resilience"
+        },
+        {
+          "id": "https://openalex.org/T13203",
+          "display_name": "Environmental Changes in China"
+        },
+        {
+          "id": "https://openalex.org/T10555",
+          "display_name": "Fire effects on ecosystems"
+        },
+        {
+          "id": "https://openalex.org/T10930",
+          "display_name": "Flood Risk Assessment and Management"
+        },
+        {
+          "id": "https://openalex.org/T11753",
+          "display_name": "Forest Management and Policy"
+        },
+        {
+          "id": "https://openalex.org/T11186",
+          "display_name": "Hydrology and Drought Analysis"
+        },
+        {
+          "id": "https://openalex.org/T11963",
+          "display_name": "Impact of Light on Environment and Health"
+        },
+        {
+          "id": "https://openalex.org/T10226",
+          "display_name": "Land Use and Ecosystem Services"
+        },
+        {
+          "id": "https://openalex.org/T13507",
+          "display_name": "Literature, Politics, and Exile Studies"
+        },
+        {
+          "id": "https://openalex.org/T10230",
+          "display_name": "Marine and fisheries research"
+        },
+        {
+          "id": "https://openalex.org/T11088",
+          "display_name": "Marine Bivalve and Aquaculture Studies"
+        },
+        {
+          "id": "https://openalex.org/T12213",
+          "display_name": "Marine Ecology and Invasive Species"
+        },
+        {
+          "id": "https://openalex.org/T10266",
+          "display_name": "Plant Water Relations and Carbon Dynamics"
+        },
+        {
+          "id": "https://openalex.org/T11089",
+          "display_name": "Radioactive contamination and transfer"
+        },
+        {
+          "id": "https://openalex.org/T14329",
+          "display_name": "Science and Climate Studies"
+        },
+        {
+          "id": "https://openalex.org/T13997",
+          "display_name": "Scientific Research and Studies"
+        },
+        {
+          "id": "https://openalex.org/T10119",
+          "display_name": "Sustainability and Climate Change Governance"
+        },
+        {
+          "id": "https://openalex.org/T13424",
+          "display_name": "Ukraine: War, Education, Health"
+        }
+      ],
+      "relevance_score": 64485.348,
+      "works_count": 116228,
+      "cited_by_count": 4395368,
+      "updated_date": "2025-09-15T05:21:13.212587",
+      "created_date": "2024-01-23"
+    },
+    {
+      "id": "https://openalex.org/T10895",
+      "display_name": "Species Distribution and Climate Change",
+      "description": "This cluster of papers focuses on species distribution modeling in the context of climate change impacts, utilizing methods such as MaxEnt and ecological niche modeling. It explores the effects of climate change on biodiversity, habitat suitability, range shifts, and conservation efforts. Additionally, it highlights the role of citizen science in ecological research.",
+      "keywords": [
+        "Species Distribution Modeling",
+        "Climate Change",
+        "Ecological Niche",
+        "MaxEnt",
+        "Biodiversity",
+        "Citizen Science",
+        "Habitat Suitability",
+        "Model Evaluation",
+        "Range Shifts",
+        "Conservation Biology"
+      ],
+      "ids": {
+        "openalex": "https://openalex.org/T10895",
+        "wikipedia": "https://en.wikipedia.org/wiki/Species_distribution_modelling"
+      },
+      "subfield": {
+        "id": "https://openalex.org/subfields/2302",
+        "display_name": "Ecological Modeling"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/23",
+        "display_name": "Environmental Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      },
+      "siblings": [
+        {
+          "id": "https://openalex.org/T12092",
+          "display_name": "Erosion and Abrasive Machining"
+        },
+        {
+          "id": "https://openalex.org/T13955",
+          "display_name": "Evaluation Methods in Various Fields"
+        }
+      ],
+      "relevance_score": 43014.79,
+      "works_count": 97425,
+      "cited_by_count": 2385279,
+      "updated_date": "2025-09-15T05:44:15.906722",
+      "created_date": "2024-01-23"
+    },
+    {
+      "id": "https://openalex.org/T11320",
+      "display_name": "Atmospheric Ozone and Climate",
+      "description": "This cluster of papers focuses on the study of stratospheric chemistry, with a particular emphasis on the impacts of ozone depletion, changes in stratospheric water vapor, and the influence of the Brewer-Dobson circulation on climate. It also covers the role of remote sensing instruments and chemical transport models in understanding atmospheric composition and climate impact. The cluster highlights the significance of the Montreal Protocol in protecting the ozone layer and addresses the influence of solar cycle variations on stratospheric chemistry.",
+      "keywords": [
+        "Stratospheric Water Vapor",
+        "Ozone Depletion",
+        "Tropopause Layer",
+        "Climate Impact",
+        "Brewer-Dobson Circulation",
+        "Atmospheric Composition",
+        "Remote Sensing Instruments",
+        "Chemical Transport Model",
+        "Solar Cycle Influence",
+        "Montreal Protocol"
+      ],
+      "ids": {
+        "openalex": "https://openalex.org/T11320",
+        "wikipedia": "https://en.wikipedia.org/wiki/Stratospheric_chemistry"
+      },
+      "subfield": {
+        "id": "https://openalex.org/subfields/1902",
+        "display_name": "Atmospheric Science"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/19",
+        "display_name": "Earth and Planetary Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      },
+      "siblings": [
+        {
+          "id": "https://openalex.org/T11459",
+          "display_name": "Arctic and Antarctic ice dynamics"
+        },
+        {
+          "id": "https://openalex.org/T10075",
+          "display_name": "Atmospheric chemistry and aerosols"
+        },
+        {
+          "id": "https://openalex.org/T11333",
+          "display_name": "Climate change and permafrost"
+        },
+        {
+          "id": "https://openalex.org/T10644",
+          "display_name": "Cryospheric studies and observations"
+        },
+        {
+          "id": "https://openalex.org/T13811",
+          "display_name": "Earth Systems and Cosmic Evolution"
+        },
+        {
+          "id": "https://openalex.org/T10017",
+          "display_name": "Geology and Paleoclimatology Research"
+        },
+        {
+          "id": "https://openalex.org/T10466",
+          "display_name": "Meteorological Phenomena and Simulations"
+        },
+        {
+          "id": "https://openalex.org/T12202",
+          "display_name": "nanoparticles nucleation surface interactions"
+        },
+        {
+          "id": "https://openalex.org/T11234",
+          "display_name": "Precipitation Measurement and Analysis"
+        },
+        {
+          "id": "https://openalex.org/T13890",
+          "display_name": "Remote Sensing and Land Use"
+        },
+        {
+          "id": "https://openalex.org/T11594",
+          "display_name": "Tree-ring climate responses"
+        },
+        {
+          "id": "https://openalex.org/T11483",
+          "display_name": "Tropical and Extratropical Cyclones Research"
+        }
+      ],
+      "relevance_score": 39779.957,
+      "works_count": 92832,
+      "cited_by_count": 1716660,
+      "updated_date": "2025-09-15T06:09:15.148429",
+      "created_date": "2024-01-23"
+    }
+  ],
+  "group_by": []
+}

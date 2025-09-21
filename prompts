@@ -1,2 +1,2 @@
 Starting from the python file openalex_citation_network.py, which builds an openalex citation network for climate science, create one or more new python files that use openalex topics instead of openalex concepts.  Structure the new files as  appropriate python objects.  
-please run tests/test_openalex.py and explain any errors.  Please suggest appropriate fixes
+Please create a test file, test_openalex.py, modeled on test_openalex_network.py, with a single test, test_get_topic, modeled on the same named method in test_openalex_network.py.  For the new test, use monkeypatching for the OpenAlexClient._get method.  The monkeypatched method should return the contents of file sample_topic.json

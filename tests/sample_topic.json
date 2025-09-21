@@ -1,0 +1,87 @@
+{
+  "id": "https://openalex.org/T10017",
+  "display_name": "Geology and Paleoclimatology Research",
+  "description": "This cluster of papers encompasses research on climate change and paleoclimatology, including topics such as glacial cycles, Holocene climate variability, sea level fluctuations, monsoon dynamics, greenhouse warming, ice core records, solar influence on climate, and atmospheric CO2 concentrations over various timescales.",
+  "keywords": [
+    "Climate Change",
+    "Paleoclimatology",
+    "Glacial Cycles",
+    "Holocene",
+    "Sea Level",
+    "Monsoon Dynamics",
+    "Greenhouse Warming",
+    "Ice Core Records",
+    "Solar Influence",
+    "Atmospheric CO2"
+  ],
+  "ids": {
+    "openalex": "https://openalex.org/T10017",
+    "wikipedia": "https://en.wikipedia.org/wiki/Paleoclimatology"
+  },
+  "subfield": {
+    "id": "https://openalex.org/subfields/1902",
+    "display_name": "Atmospheric Science"
+  },
+  "field": {
+    "id": "https://openalex.org/fields/19",
+    "display_name": "Earth and Planetary Sciences"
+  },
+  "domain": {
+    "id": "https://openalex.org/domains/3",
+    "display_name": "Physical Sciences"
+  },
+  "siblings": [
+    {
+      "id": "https://openalex.org/T11459",
+      "display_name": "Arctic and Antarctic ice dynamics"
+    },
+    {
+      "id": "https://openalex.org/T10075",
+      "display_name": "Atmospheric chemistry and aerosols"
+    },
+    {
+      "id": "https://openalex.org/T11320",
+      "display_name": "Atmospheric Ozone and Climate"
+    },
+    {
+      "id": "https://openalex.org/T11333",
+      "display_name": "Climate change and permafrost"
+    },
+    {
+      "id": "https://openalex.org/T10644",
+      "display_name": "Cryospheric studies and observations"
+    },
+    {
+      "id": "https://openalex.org/T13811",
+      "display_name": "Earth Systems and Cosmic Evolution"
+    },
+    {
+      "id": "https://openalex.org/T10466",
+      "display_name": "Meteorological Phenomena and Simulations"
+    },
+    {
+      "id": "https://openalex.org/T12202",
+      "display_name": "nanoparticles nucleation surface interactions"
+    },
+    {
+      "id": "https://openalex.org/T11234",
+      "display_name": "Precipitation Measurement and Analysis"
+    },
+    {
+      "id": "https://openalex.org/T13890",
+      "display_name": "Remote Sensing and Land Use"
+    },
+    {
+      "id": "https://openalex.org/T11594",
+      "display_name": "Tree-ring climate responses"
+    },
+    {
+      "id": "https://openalex.org/T11483",
+      "display_name": "Tropical and Extratropical Cyclones Research"
+    }
+  ],
+  "works_count": 282553,
+  "cited_by_count": 6229829,
+  "updated_date": "2025-09-15T05:16:14.673292",
+  "created_date": "2024-01-23"
+}

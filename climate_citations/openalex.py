@@ -5,6 +5,7 @@ Adjust filter keys if OpenAlex filter names change (e.g. 'topics.id' vs 'topic.i
 from dataclasses import dataclass
 from typing import Dict, Generator, List, Optional
 import requests
+import json
 import time
 
 
@@ -47,6 +48,11 @@ class OpenAlexClient:
         resp.raise_for_status()
         if self.sleep:
             time.sleep(self.sleep)
+        # print(resp.json())
+        print("_get json_string: ")
+        json_string = json.dumps(resp.json(), indent=2)
+        print(json_string)
+
         return resp.json()
 
     def get_topic(self, topic_id: str) -> Topic:
@@ -72,6 +78,9 @@ class OpenAlexClient:
             results = data.get("results", [])
             for t in results:
                 yield Topic(id=t.get("id"), display_name=t.get("display_name"), level=t.get("level"))
+            # json_string = json.dumps(results, indent=2)
+            # print(json_string)
+
             # pagination: OpenAlex uses "meta" with "next_cursor" or "next" URL.
             meta = data.get("meta", {})
             next_cursor = meta.get("next_cursor") or meta.get("next")
@@ -94,6 +103,10 @@ class OpenAlexClient:
             params["cursor"] = cursor
             data = self._get(path, params=params)
             results = data.get("results", [])
+            # print("get_works_for_topic json_string: ")
+            # json_string = json.dumps(results, indent=2)
+            # print(json_string)
+
             for w in results:
                 works.append(
                     Work(
