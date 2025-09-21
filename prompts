@@ -1,0 +1,1 @@
+Starting from the python file openalex_citation_network.py, which builds an openalex citation network for climate science, create one or more new python files that use openalex topics instead of openalex concepts.  Structure the new files as  appropriate python objects.  
