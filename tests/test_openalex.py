@@ -44,6 +44,15 @@ class TestOpenAlexClient(unittest.TestCase):
         self.assertEqual(first_work.publication_year, 2013)
      
 
+    def test_get_work(self):
+        # monkeypatch OpenAlexClient._get to return the sample work JSON
+        self._get_returns_file_contents("sample_work.json")
+        work = self.client.get_work("W4249751050")
+        self.assertIsInstance(work, Work)
+        self.assertEqual(work.id, "https://openalex.org/W4249751050")
+        self.assertEqual(work.title, "IntCal13 and Marine13 Radiocarbon Age Calibration Curves 0–50,000 Years cal BP")
+        self.assertEqual(work.publication_year, 2013)
+        self.mp.undo()
 
     def _get_returns_file_contents(self, filename: str) -> dict:
         path = os.path.join(os.path.dirname(__file__), filename)

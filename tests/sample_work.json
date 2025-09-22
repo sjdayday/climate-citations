@@ -1,0 +1,2315 @@
+{
+    "id": "https://openalex.org/W4249751050",
+    "doi": "https://doi.org/10.2458/azu_js_rc.55.16947",
+    "title": "IntCal13 and Marine13 Radiocarbon Age Calibration Curves 0\u201350,000 Years cal BP",
+    "display_name": "IntCal13 and Marine13 Radiocarbon Age Calibration Curves 0\u201350,000 Years cal BP",
+    "publication_year": 2013,
+    "publication_date": "2013-01-01",
+    "ids": {
+    "openalex": "https://openalex.org/W4249751050",
+    "doi": "https://doi.org/10.2458/azu_js_rc.55.16947"
+    },
+    "language": "en",
+    "primary_location": {
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.2458/azu_js_rc.55.16947",
+    "pdf_url": null,
+    "source": {
+        "id": "https://openalex.org/S35778795",
+        "display_name": "Radiocarbon",
+        "issn_l": "0033-8222",
+        "issn": [
+        "0033-8222",
+        "1945-5755"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_indexed_in_scopus": true,
+        "is_core": true,
+        "host_organization": "https://openalex.org/P4310311721",
+        "host_organization_name": "Cambridge University Press",
+        "host_organization_lineage": [
+        "https://openalex.org/P4310311721",
+        "https://openalex.org/P4310311702"
+        ],
+        "host_organization_lineage_names": [
+        "Cambridge University Press",
+        "University of Cambridge"
+        ],
+        "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true
+    },
+    "type": "article",
+    "type_crossref": "journal-article",
+    "indexed_in": [
+    "crossref"
+    ],
+    "open_access": {
+    "is_oa": true,
+    "oa_status": "bronze",
+    "oa_url": "https://doi.org/10.2458/azu_js_rc.55.16947",
+    "any_repository_has_fulltext": true
+    },
+    "authorships": [
+    {
+        "author_position": "first",
+        "author": {
+        "id": "https://openalex.org/A5068404345",
+        "display_name": "Paula Reimer",
+        "orcid": "https://orcid.org/0000-0001-9238-2146"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I126231945",
+            "display_name": "Queen's University Belfast",
+            "ror": "https://ror.org/00hswnk62",
+            "country_code": "GB",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I126231945"
+            ]
+        }
+        ],
+        "countries": [
+        "GB"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Paula J Reimer",
+        "raw_affiliation_strings": [
+        "QUB - Queen's University [Belfast] (University Road,  Belfast, BT7 1NN, Northern Ireland, UK - Ireland)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "QUB - Queen's University [Belfast] (University Road,  Belfast, BT7 1NN, Northern Ireland, UK - Ireland)",
+            "institution_ids": [
+            "https://openalex.org/I126231945"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5024631008",
+        "display_name": "\u00c9douard Bard",
+        "orcid": "https://orcid.org/0000-0002-7237-8622"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I187986737",
+            "display_name": "Coll\u00e8ge de France",
+            "ror": "https://ror.org/04ex24z53",
+            "country_code": "FR",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I187986737"
+            ]
+        }
+        ],
+        "countries": [
+        "FR"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Edouard Bard",
+        "raw_affiliation_strings": [
+        "Coll\u00e8ge de France - Chaire Evolution du climat et de l'oc\u00e9an (11 place Marcelin Berthelot \r\n75005 PARIS - France)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "Coll\u00e8ge de France - Chaire Evolution du climat et de l'oc\u00e9an (11 place Marcelin Berthelot \r\n75005 PARIS - France)",
+            "institution_ids": [
+            "https://openalex.org/I187986737"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5071512716",
+        "display_name": "Alex Bayliss",
+        "orcid": "https://orcid.org/0000-0003-2782-1979"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I1338293689",
+            "display_name": "English Heritage",
+            "ror": "https://ror.org/015j35893",
+            "country_code": "GB",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I1338293689"
+            ]
+        },
+        {
+            "id": "https://openalex.org/I2799939188",
+            "display_name": "Historic England",
+            "ror": "https://ror.org/01vnt7q67",
+            "country_code": "GB",
+            "type": "archive",
+            "lineage": [
+            "https://openalex.org/I2799939188"
+            ]
+        }
+        ],
+        "countries": [
+        "GB"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Alex Bayliss",
+        "raw_affiliation_strings": [
+        "English Heritage Centre for Archaeology (United Kingdom)",
+        "Historic England (4th Floor Cannon Bridge House 25 Dowgate Hill London  EC4R 2YA - United Kingdom)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "English Heritage Centre for Archaeology (United Kingdom)",
+            "institution_ids": [
+            "https://openalex.org/I1338293689"
+            ]
+        },
+        {
+            "raw_affiliation_string": "Historic England (4th Floor Cannon Bridge House 25 Dowgate Hill London  EC4R 2YA - United Kingdom)",
+            "institution_ids": [
+            "https://openalex.org/I2799939188"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5073437473",
+        "display_name": "J Beck",
+        "orcid": "https://orcid.org/0000-0001-9313-7134"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I138006243",
+            "display_name": "University of Arizona",
+            "ror": "https://ror.org/03m2x1q45",
+            "country_code": "US",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I138006243"
+            ]
+        }
+        ],
+        "countries": [
+        "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "J Warren Beck",
+        "raw_affiliation_strings": [
+        "University of Arizona (Tucson AZ 85721 USA - United States)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "University of Arizona (Tucson AZ 85721 USA - United States)",
+            "institution_ids": [
+            "https://openalex.org/I138006243"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5036384310",
+        "display_name": "Paul G. Blackwell",
+        "orcid": "https://orcid.org/0000-0002-3141-4914"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I91136226",
+            "display_name": "University of Sheffield",
+            "ror": "https://ror.org/05krs5044",
+            "country_code": "GB",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I91136226"
+            ]
+        }
+        ],
+        "countries": [
+        "GB"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Paul G Blackwell",
+        "raw_affiliation_strings": [
+        "University of Sheffield [Sheffield] (Western Bank Sheffield S10 2TN - United Kingdom)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "University of Sheffield [Sheffield] (Western Bank Sheffield S10 2TN - United Kingdom)",
+            "institution_ids": [
+            "https://openalex.org/I91136226"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5019751266",
+        "display_name": "Christopher Bronk Ramsey",
+        "orcid": "https://orcid.org/0000-0002-8641-9309"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I40120149",
+            "display_name": "University of Oxford",
+            "ror": "https://ror.org/052gg0110",
+            "country_code": "GB",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I40120149"
+            ]
+        }
+        ],
+        "countries": [
+        "GB"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Christopher Bronk Ramsey",
+        "raw_affiliation_strings": [
+        "University of Oxford (Wellington Square, Oxford OX1 2JD - United Kingdom)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "University of Oxford (Wellington Square, Oxford OX1 2JD - United Kingdom)",
+            "institution_ids": [
+            "https://openalex.org/I40120149"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5031608395",
+        "display_name": "Caitlin E. Buck",
+        "orcid": "https://orcid.org/0000-0002-0872-9504"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I91136226",
+            "display_name": "University of Sheffield",
+            "ror": "https://ror.org/05krs5044",
+            "country_code": "GB",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I91136226"
+            ]
+        }
+        ],
+        "countries": [
+        "GB"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Caitlin E Buck",
+        "raw_affiliation_strings": [
+        "University of Sheffield [Sheffield] (Western Bank Sheffield S10 2TN - United Kingdom)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "University of Sheffield [Sheffield] (Western Bank Sheffield S10 2TN - United Kingdom)",
+            "institution_ids": [
+            "https://openalex.org/I91136226"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5023065107",
+        "display_name": "Hai Cheng",
+        "orcid": "https://orcid.org/0000-0002-5305-9458"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I87445476",
+            "display_name": "Xi'an Jiaotong University",
+            "ror": "https://ror.org/017zhmm22",
+            "country_code": "CN",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I87445476"
+            ]
+        },
+        {
+            "id": "https://openalex.org/I2800403580",
+            "display_name": "University of Minnesota System",
+            "ror": "https://ror.org/03grvy078",
+            "country_code": "US",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I2800403580"
+            ]
+        }
+        ],
+        "countries": [
+        "CN",
+        "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Hai Cheng",
+        "raw_affiliation_strings": [
+        "UMN - University of Minnesota System (United States)",
+        "Xjtu - Xi'an Jiaotong University (28 Xianning W Rd, JiaoDa ShangYe JieQu, Beilin Qu, Xian Shi, Shaanxi Sheng - China)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "Xjtu - Xi'an Jiaotong University (28 Xianning W Rd, JiaoDa ShangYe JieQu, Beilin Qu, Xian Shi, Shaanxi Sheng - China)",
+            "institution_ids": [
+            "https://openalex.org/I87445476"
+            ]
+        },
+        {
+            "raw_affiliation_string": "UMN - University of Minnesota System (United States)",
+            "institution_ids": [
+            "https://openalex.org/I2800403580"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5007139673",
+        "display_name": "R. Lawrence Edwards",
+        "orcid": "https://orcid.org/0000-0002-7027-5881"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I130238516",
+            "display_name": "University of Minnesota",
+            "ror": "https://ror.org/017zqws13",
+            "country_code": "US",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I130238516"
+            ]
+        },
+        {
+            "id": "https://openalex.org/I4210101327",
+            "display_name": "Twin Cities Orthopedics",
+            "ror": "https://ror.org/01en4s460",
+            "country_code": "US",
+            "type": "healthcare",
+            "lineage": [
+            "https://openalex.org/I4210101327"
+            ]
+        }
+        ],
+        "countries": [
+        "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "R Lawrence Edwards",
+        "raw_affiliation_strings": [
+        "UMN - University of Minnesota [Twin Cities] (Minneapolis, MN 55455 - United States)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "UMN - University of Minnesota [Twin Cities] (Minneapolis, MN 55455 - United States)",
+            "institution_ids": [
+            "https://openalex.org/I130238516",
+            "https://openalex.org/I4210101327"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5056586938",
+        "display_name": "Michael Friedrich",
+        "orcid": "https://orcid.org/0000-0003-1614-0959"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I110079840",
+            "display_name": "University of Hohenheim",
+            "ror": "https://ror.org/00b1c9541",
+            "country_code": "DE",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I110079840"
+            ]
+        },
+        {
+            "id": "https://openalex.org/I4210125571",
+            "display_name": "Heidelberg Academy of Sciences and Humanities",
+            "ror": "https://ror.org/02dvf9b44",
+            "country_code": "DE",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I4210125571"
+            ]
+        }
+        ],
+        "countries": [
+        "DE"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Michael Friedrich",
+        "raw_affiliation_strings": [
+        "Heidelberger Akademie der Wissenschaften (Germany)",
+        "University of Hohenheim (Schwerzstra\u00dfe 35 70599 Stuttgart Germany - Germany)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "University of Hohenheim (Schwerzstra\u00dfe 35 70599 Stuttgart Germany - Germany)",
+            "institution_ids": [
+            "https://openalex.org/I110079840"
+            ]
+        },
+        {
+            "raw_affiliation_string": "Heidelberger Akademie der Wissenschaften (Germany)",
+            "institution_ids": [
+            "https://openalex.org/I4210125571"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5025708471",
+        "display_name": "Pieter Meiert Grootes",
+        "orcid": "https://orcid.org/0000-0003-4265-3168"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I32021983",
+            "display_name": "Christian-Albrechts-Universit\u00e4t zu Kiel",
+            "ror": "https://ror.org/04v76ef78",
+            "country_code": "DE",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I32021983"
+            ]
+        }
+        ],
+        "countries": [
+        "DE"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Pieter M Grootes",
+        "raw_affiliation_strings": [
+        "CAU - Christian-Albrechts-Universit\u00e4t zu Kiel = Christian-Albrechts University of Kiel = Universit\u00e9 Christian-Albrechts de Kiel (Christian-Albrechts-Platz 4, 24118 Kiel, Germany - Germany)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "CAU - Christian-Albrechts-Universit\u00e4t zu Kiel = Christian-Albrechts University of Kiel = Universit\u00e9 Christian-Albrechts de Kiel (Christian-Albrechts-Platz 4, 24118 Kiel, Germany - Germany)",
+            "institution_ids": [
+            "https://openalex.org/I32021983"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5074563265",
+        "display_name": "T. P. Guilderson",
+        "orcid": "https://orcid.org/0000-0001-9371-7059"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I1282311441",
+            "display_name": "Lawrence Livermore National Laboratory",
+            "ror": "https://ror.org/041nk4h53",
+            "country_code": "US",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I1282311441",
+            "https://openalex.org/I1330989302",
+            "https://openalex.org/I198811213",
+            "https://openalex.org/I4210138311"
+            ]
+        },
+        {
+            "id": "https://openalex.org/I185103710",
+            "display_name": "University of California, Santa Cruz",
+            "ror": "https://ror.org/03s65by71",
+            "country_code": "US",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I185103710"
+            ]
+        }
+        ],
+        "countries": [
+        "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Thomas P Guilderson",
+        "raw_affiliation_strings": [
+        "LLNL - Lawrence Livermore National Laboratory (7000 East Avenue \u2022 Livermore, CA 94550 - United States)",
+        "UC Santa Cruz - University of California [Santa Cruz] (1156 High Street, Santa Cruz, Ca 95064 - United States)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "LLNL - Lawrence Livermore National Laboratory (7000 East Avenue \u2022 Livermore, CA 94550 - United States)",
+            "institution_ids": [
+            "https://openalex.org/I1282311441"
+            ]
+        },
+        {
+            "raw_affiliation_string": "UC Santa Cruz - University of California [Santa Cruz] (1156 High Street, Santa Cruz, Ca 95064 - United States)",
+            "institution_ids": [
+            "https://openalex.org/I185103710"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5060385090",
+        "display_name": "Haflidi Haflidason",
+        "orcid": "https://orcid.org/0000-0002-7782-8856"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I4432739",
+            "display_name": "University of Bergen",
+            "ror": "https://ror.org/03zga2b32",
+            "country_code": "NO",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I4432739"
+            ]
+        }
+        ],
+        "countries": [
+        "NO"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Haflidi Haflidason",
+        "raw_affiliation_strings": [
+        "UiB - University of Bergen (Universitetet i Bergen | Postboks 7800, NO-5020 Bergen - Norway)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "UiB - University of Bergen (Universitetet i Bergen | Postboks 7800, NO-5020 Bergen - Norway)",
+            "institution_ids": [
+            "https://openalex.org/I4432739"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5085767193",
+        "display_name": "Irka Hajdas",
+        "orcid": "https://orcid.org/0000-0003-2373-2725"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I35440088",
+            "display_name": "ETH Zurich",
+            "ror": "https://ror.org/05a28rw58",
+            "country_code": "CH",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I2799323385",
+            "https://openalex.org/I35440088"
+            ]
+        }
+        ],
+        "countries": [
+        "CH"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Irka Hajdas",
+        "raw_affiliation_strings": [
+        "Ion Beam Physics [ETH Z\u00fcrich] (Schafmattstrasse 20, CH-8093 Zurich, Switzerland - Switzerland)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "Ion Beam Physics [ETH Z\u00fcrich] (Schafmattstrasse 20, CH-8093 Zurich, Switzerland - Switzerland)",
+            "institution_ids": [
+            "https://openalex.org/I35440088"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5043869999",
+        "display_name": "Christine Hatt\u00e9",
+        "orcid": "https://orcid.org/0000-0002-7086-2672"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I2738703131",
+            "display_name": "Commissariat \u00e0 l'\u00c9nergie Atomique et aux \u00c9nergies Alternatives",
+            "ror": "https://ror.org/00jjx8s55",
+            "country_code": "FR",
+            "type": "government",
+            "lineage": [
+            "https://openalex.org/I2738703131"
+            ]
+        },
+        {
+            "id": "https://openalex.org/I4210128565",
+            "display_name": "CEA Paris-Saclay",
+            "ror": "https://ror.org/03n15ch10",
+            "country_code": "FR",
+            "type": "government",
+            "lineage": [
+            "https://openalex.org/I2738703131",
+            "https://openalex.org/I277688954",
+            "https://openalex.org/I4210128565"
+            ]
+        },
+        {
+            "id": "https://openalex.org/I4210124937",
+            "display_name": "Laboratoire des Sciences du Climat et de l'Environnement",
+            "ror": "https://ror.org/03dsd0g48",
+            "country_code": "FR",
+            "type": "facility",
+            "lineage": [
+            "https://openalex.org/I1294671590",
+            "https://openalex.org/I195731000",
+            "https://openalex.org/I2738703131",
+            "https://openalex.org/I277688954",
+            "https://openalex.org/I4210124937",
+            "https://openalex.org/I4210148025"
+            ]
+        }
+        ],
+        "countries": [
+        "FR"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Christine Hatt\u00e9",
+        "raw_affiliation_strings": [
+        "GEOTRAC - G\u00e9ochrononologie Traceurs Arch\u00e9om\u00e9trie (LSCE. CEA Paris-Saclay. Orme des merisiers.  91190 Saint-Aubin. - France)",
+        "LSCE - Laboratoire des Sciences du Climat et de l'Environnement [Gif-sur-Yvette] (B\u00e2t. 12,\r\navenue de la Terrasse, \r\nF-91198 GIF-SUR-YVETTE CEDEX\r\n - France)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "GEOTRAC - G\u00e9ochrononologie Traceurs Arch\u00e9om\u00e9trie (LSCE. CEA Paris-Saclay. Orme des merisiers.  91190 Saint-Aubin. - France)",
+            "institution_ids": [
+            "https://openalex.org/I2738703131",
+            "https://openalex.org/I4210128565"
+            ]
+        },
+        {
+            "raw_affiliation_string": "LSCE - Laboratoire des Sciences du Climat et de l'Environnement [Gif-sur-Yvette] (B\u00e2t. 12,\r\navenue de la Terrasse, \r\nF-91198 GIF-SUR-YVETTE CEDEX\r\n - France)",
+            "institution_ids": [
+            "https://openalex.org/I4210124937"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5016556683",
+        "display_name": "Timothy Heaton",
+        "orcid": "https://orcid.org/0000-0002-9994-142X"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I91136226",
+            "display_name": "University of Sheffield",
+            "ror": "https://ror.org/05krs5044",
+            "country_code": "GB",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I91136226"
+            ]
+        }
+        ],
+        "countries": [
+        "GB"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Timothy J Heaton",
+        "raw_affiliation_strings": [
+        "University of Sheffield [Sheffield] (Western Bank Sheffield S10 2TN - United Kingdom)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "University of Sheffield [Sheffield] (Western Bank Sheffield S10 2TN - United Kingdom)",
+            "institution_ids": [
+            "https://openalex.org/I91136226"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5040142349",
+        "display_name": "Dirk L. Hoffmann",
+        "orcid": "https://orcid.org/0000-0002-9245-2041"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I4210107073",
+            "display_name": "Centro Nacional de Investigaci\u00f3n sobre la Evoluci\u00f3n Humana",
+            "ror": "https://ror.org/01nse6g27",
+            "country_code": "ES",
+            "type": "facility",
+            "lineage": [
+            "https://openalex.org/I4210107073"
+            ]
+        }
+        ],
+        "countries": [
+        "ES"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Dirk L Hoffmann",
+        "raw_affiliation_strings": [
+        "CENIEH - Centro Nacional de Investigaci\u00f3n sobre la Evoluci\u00f3n Humana (Spain)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "CENIEH - Centro Nacional de Investigaci\u00f3n sobre la Evoluci\u00f3n Humana (Spain)",
+            "institution_ids": [
+            "https://openalex.org/I4210107073"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5046661310",
+        "display_name": "Alan Hogg",
+        "orcid": "https://orcid.org/0000-0002-4001-9027"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I52179390",
+            "display_name": "University of Waikato",
+            "ror": "https://ror.org/013fsnh78",
+            "country_code": "NZ",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I52179390"
+            ]
+        }
+        ],
+        "countries": [
+        "NZ"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Alan G Hogg",
+        "raw_affiliation_strings": [
+        "University of Waikato [Hamilton] (Hillcrest, Hamilton 3216 - New Zealand)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "University of Waikato [Hamilton] (Hillcrest, Hamilton 3216 - New Zealand)",
+            "institution_ids": [
+            "https://openalex.org/I52179390"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5029547508",
+        "display_name": "Konrad A Hughen",
+        "orcid": "https://orcid.org/0000-0003-3201-934X"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I66958751",
+            "display_name": "Woods Hole Oceanographic Institution",
+            "ror": "https://ror.org/03zbnzt98",
+            "country_code": "US",
+            "type": "nonprofit",
+            "lineage": [
+            "https://openalex.org/I66958751"
+            ]
+        }
+        ],
+        "countries": [
+        "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Konrad A Hughen",
+        "raw_affiliation_strings": [
+        "WHOI - Department of Marine Chemistry and Geochemistry (Woods Hole, MA 02543 - United States)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "WHOI - Department of Marine Chemistry and Geochemistry (Woods Hole, MA 02543 - United States)",
+            "institution_ids": [
+            "https://openalex.org/I66958751"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5074125253",
+        "display_name": "Klaus F\u00e9lix Kaiser",
+        "orcid": null
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I202697423",
+            "display_name": "University of Zurich",
+            "ror": "https://ror.org/02crff812",
+            "country_code": "CH",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I202697423"
+            ]
+        },
+        {
+            "id": "https://openalex.org/I2800262456",
+            "display_name": "Swiss Federal Institute for Forest, Snow and Landscape Research",
+            "ror": "https://ror.org/04bs5yc70",
+            "country_code": "CH",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I2799323385",
+            "https://openalex.org/I2800262456"
+            ]
+        }
+        ],
+        "countries": [
+        "CH"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "K Felix Kaiser",
+        "raw_affiliation_strings": [
+        "Swiss Federal Institute for Forest, Snow and Landscape Research WSL (Z\u00fcrcherstrasse 111, CH-8903 Birmensdorf - Switzerland)",
+        "UZH - Universit\u00e4t Z\u00fcrich [Z\u00fcrich] = University of Zurich (R\u00e4mistrasse 71 CH-8006 Z\u00fcrich - Switzerland)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "UZH - Universit\u00e4t Z\u00fcrich [Z\u00fcrich] = University of Zurich (R\u00e4mistrasse 71 CH-8006 Z\u00fcrich - Switzerland)",
+            "institution_ids": [
+            "https://openalex.org/I202697423"
+            ]
+        },
+        {
+            "raw_affiliation_string": "Swiss Federal Institute for Forest, Snow and Landscape Research WSL (Z\u00fcrcherstrasse 111, CH-8903 Birmensdorf - Switzerland)",
+            "institution_ids": [
+            "https://openalex.org/I2800262456"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5067661862",
+        "display_name": "Bernd Kromer",
+        "orcid": "https://orcid.org/0000-0003-1058-4436"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I223822909",
+            "display_name": "Heidelberg University",
+            "ror": "https://ror.org/038t36y30",
+            "country_code": "DE",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I223822909"
+            ]
+        },
+        {
+            "id": "https://openalex.org/I4210125571",
+            "display_name": "Heidelberg Academy of Sciences and Humanities",
+            "ror": "https://ror.org/02dvf9b44",
+            "country_code": "DE",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I4210125571"
+            ]
+        }
+        ],
+        "countries": [
+        "DE"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Bernd Kromer",
+        "raw_affiliation_strings": [
+        "Heidelberger Akademie der Wissenschaften (Germany)",
+        "IUP - Institute of Environmental Physics [Heidelberg] (Im Neuenheimer Feld 229 , D-69120 Heidelberg - Germany)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "IUP - Institute of Environmental Physics [Heidelberg] (Im Neuenheimer Feld 229 , D-69120 Heidelberg - Germany)",
+            "institution_ids": [
+            "https://openalex.org/I223822909"
+            ]
+        },
+        {
+            "raw_affiliation_string": "Heidelberger Akademie der Wissenschaften (Germany)",
+            "institution_ids": [
+            "https://openalex.org/I4210125571"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5032135259",
+        "display_name": "Sturt W. Manning",
+        "orcid": "https://orcid.org/0000-0002-6917-0927"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I202697423",
+            "display_name": "University of Zurich",
+            "ror": "https://ror.org/02crff812",
+            "country_code": "CH",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I202697423"
+            ]
+        }
+        ],
+        "countries": [
+        "CH"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Sturt W Manning",
+        "raw_affiliation_strings": [
+        "UZH - Universit\u00e4t Z\u00fcrich [Z\u00fcrich] = University of Zurich (R\u00e4mistrasse 71 CH-8006 Z\u00fcrich - Switzerland)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "UZH - Universit\u00e4t Z\u00fcrich [Z\u00fcrich] = University of Zurich (R\u00e4mistrasse 71 CH-8006 Z\u00fcrich - Switzerland)",
+            "institution_ids": [
+            "https://openalex.org/I202697423"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5089799265",
+        "display_name": "Mu Niu",
+        "orcid": "https://orcid.org/0000-0002-3068-5501"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I91136226",
+            "display_name": "University of Sheffield",
+            "ror": "https://ror.org/05krs5044",
+            "country_code": "GB",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I91136226"
+            ]
+        }
+        ],
+        "countries": [
+        "GB"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Mu Niu",
+        "raw_affiliation_strings": [
+        "University of Sheffield [Sheffield] (Western Bank Sheffield S10 2TN - United Kingdom)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "University of Sheffield [Sheffield] (Western Bank Sheffield S10 2TN - United Kingdom)",
+            "institution_ids": [
+            "https://openalex.org/I91136226"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5059819096",
+        "display_name": "Ron Reimer",
+        "orcid": "https://orcid.org/0000-0001-7939-6623"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I126231945",
+            "display_name": "Queen's University Belfast",
+            "ror": "https://ror.org/00hswnk62",
+            "country_code": "GB",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I126231945"
+            ]
+        }
+        ],
+        "countries": [
+        "GB"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Ron W Reimer",
+        "raw_affiliation_strings": [
+        "QUB - Queen's University [Belfast] (University Road,  Belfast, BT7 1NN, Northern Ireland, UK - Ireland)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "QUB - Queen's University [Belfast] (University Road,  Belfast, BT7 1NN, Northern Ireland, UK - Ireland)",
+            "institution_ids": [
+            "https://openalex.org/I126231945"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5036612619",
+        "display_name": "David A. Richards",
+        "orcid": "https://orcid.org/0000-0001-8389-8079"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I36234482",
+            "display_name": "University of Bristol",
+            "ror": "https://ror.org/0524sp257",
+            "country_code": "GB",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I36234482"
+            ]
+        }
+        ],
+        "countries": [
+        "GB"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "David A Richards",
+        "raw_affiliation_strings": [
+        "University of Bristol [Bristol] (Senate House, Tyndall Avenue, Bristol BS8 1TH - United Kingdom)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "University of Bristol [Bristol] (Senate House, Tyndall Avenue, Bristol BS8 1TH - United Kingdom)",
+            "institution_ids": [
+            "https://openalex.org/I36234482"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5070204887",
+        "display_name": "E. M. Scott",
+        "orcid": "https://orcid.org/0000-0002-3709-0623"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I7882870",
+            "display_name": "University of Glasgow",
+            "ror": "https://ror.org/00vtgdb53",
+            "country_code": "GB",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I7882870"
+            ]
+        }
+        ],
+        "countries": [
+        "GB"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "E Marian Scott",
+        "raw_affiliation_strings": [
+        "University of Glasgow (Glasgow G12 8QQ Scotland - United Kingdom)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "University of Glasgow (Glasgow G12 8QQ Scotland - United Kingdom)",
+            "institution_ids": [
+            "https://openalex.org/I7882870"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5043939464",
+        "display_name": "John Southon",
+        "orcid": "https://orcid.org/0000-0001-6168-6235"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I204250578",
+            "display_name": "University of California, Irvine",
+            "ror": "https://ror.org/04gyf1771",
+            "country_code": "US",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I204250578"
+            ]
+        },
+        {
+            "id": "https://openalex.org/I4210140791",
+            "display_name": "Irvine University",
+            "ror": "https://ror.org/04ysmca02",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+            "https://openalex.org/I4210140791"
+            ]
+        }
+        ],
+        "countries": [
+        "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "John R Southon",
+        "raw_affiliation_strings": [
+        "UC Irvine - University of California [Irvine] (Irvine, CA 92697 - United States)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "UC Irvine - University of California [Irvine] (Irvine, CA 92697 - United States)",
+            "institution_ids": [
+            "https://openalex.org/I204250578",
+            "https://openalex.org/I4210140791"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5014869563",
+        "display_name": "Richard A. Staff",
+        "orcid": "https://orcid.org/0000-0002-8634-014X"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I40120149",
+            "display_name": "University of Oxford",
+            "ror": "https://ror.org/052gg0110",
+            "country_code": "GB",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I40120149"
+            ]
+        }
+        ],
+        "countries": [
+        "GB"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Richard A Staff",
+        "raw_affiliation_strings": [
+        "University of Oxford (Wellington Square, Oxford OX1 2JD - United Kingdom)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "University of Oxford (Wellington Square, Oxford OX1 2JD - United Kingdom)",
+            "institution_ids": [
+            "https://openalex.org/I40120149"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "middle",
+        "author": {
+        "id": "https://openalex.org/A5044521215",
+        "display_name": "Chris Turney",
+        "orcid": "https://orcid.org/0000-0001-6733-0993"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I31746571",
+            "display_name": "UNSW Sydney",
+            "ror": "https://ror.org/03r8z3t63",
+            "country_code": "AU",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I31746571"
+            ]
+        }
+        ],
+        "countries": [
+        "AU"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Christian S M Turney",
+        "raw_affiliation_strings": [
+        "UNSW - University of New South Wales [Sydney] (High St\r\nKensington, Sydney, NSW 2052 - Australia)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "UNSW - University of New South Wales [Sydney] (High St\r\nKensington, Sydney, NSW 2052 - Australia)",
+            "institution_ids": [
+            "https://openalex.org/I31746571"
+            ]
+        }
+        ]
+    },
+    {
+        "author_position": "last",
+        "author": {
+        "id": "https://openalex.org/A5087183374",
+        "display_name": "J. van der Plicht",
+        "orcid": "https://orcid.org/0000-0003-4298-7037"
+        },
+        "institutions": [
+        {
+            "id": "https://openalex.org/I121797337",
+            "display_name": "Leiden University",
+            "ror": "https://ror.org/027bh9e22",
+            "country_code": "NL",
+            "type": "funder",
+            "lineage": [
+            "https://openalex.org/I121797337"
+            ]
+        }
+        ],
+        "countries": [
+        "NL"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Johannes van der Plicht",
+        "raw_affiliation_strings": [
+        "CIO - Centre for Isotope Research [Groningen] (Nijenborgh 4, 9747 AG Groningen, The Netherlands - Netherlands)",
+        "Universiteit Leiden = Leiden University (Leiden University | 2300 RA Leiden \r\nThe Netherlands - Netherlands)"
+        ],
+        "affiliations": [
+        {
+            "raw_affiliation_string": "CIO - Centre for Isotope Research [Groningen] (Nijenborgh 4, 9747 AG Groningen, The Netherlands - Netherlands)",
+            "institution_ids": []
+        },
+        {
+            "raw_affiliation_string": "Universiteit Leiden = Leiden University (Leiden University | 2300 RA Leiden \r\nThe Netherlands - Netherlands)",
+            "institution_ids": [
+            "https://openalex.org/I121797337"
+            ]
+        }
+        ]
+    }
+    ],
+    "institution_assertions": [],
+    "countries_distinct_count": 11,
+    "institutions_distinct_count": 33,
+    "corresponding_author_ids": [],
+    "corresponding_institution_ids": [],
+    "apc_list": null,
+    "apc_paid": null,
+    "fwci": 902.386,
+    "has_fulltext": false,
+    "cited_by_count": 12706,
+    "citation_normalized_percentile": {
+    "value": 0.999932,
+    "is_in_top_1_percent": true,
+    "is_in_top_10_percent": true
+    },
+    "cited_by_percentile_year": {
+    "min": 99,
+    "max": 100
+    },
+    "biblio": {
+    "volume": "55",
+    "issue": "4",
+    "first_page": "1869",
+    "last_page": "1887"
+    },
+    "is_retracted": false,
+    "is_paratext": false,
+    "primary_topic": {
+    "id": "https://openalex.org/T10017",
+    "display_name": "Geology and Paleoclimatology Research",
+    "score": 0.9999,
+    "subfield": {
+        "id": "https://openalex.org/subfields/1902",
+        "display_name": "Atmospheric Science"
+    },
+    "field": {
+        "id": "https://openalex.org/fields/19",
+        "display_name": "Earth and Planetary Sciences"
+    },
+    "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+    }
+    },
+    "topics": [
+    {
+        "id": "https://openalex.org/T10017",
+        "display_name": "Geology and Paleoclimatology Research",
+        "score": 0.9999,
+        "subfield": {
+        "id": "https://openalex.org/subfields/1902",
+        "display_name": "Atmospheric Science"
+        },
+        "field": {
+        "id": "https://openalex.org/fields/19",
+        "display_name": "Earth and Planetary Sciences"
+        },
+        "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+        }
+    },
+    {
+        "id": "https://openalex.org/T10087",
+        "display_name": "Archaeology and ancient environmental studies",
+        "score": 0.9993,
+        "subfield": {
+        "id": "https://openalex.org/subfields/1911",
+        "display_name": "Paleontology"
+        },
+        "field": {
+        "id": "https://openalex.org/fields/19",
+        "display_name": "Earth and Planetary Sciences"
+        },
+        "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+        }
+    },
+    {
+        "id": "https://openalex.org/T10421",
+        "display_name": "Pleistocene-Era Hominins and Archaeology",
+        "score": 0.9973,
+        "subfield": {
+        "id": "https://openalex.org/subfields/3314",
+        "display_name": "Anthropology"
+        },
+        "field": {
+        "id": "https://openalex.org/fields/33",
+        "display_name": "Social Sciences"
+        },
+        "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+        }
+    }
+    ],
+    "keywords": [
+    {
+        "id": "https://openalex.org/keywords/macrofossil",
+        "display_name": "Macrofossil",
+        "score": 0.8984016
+    },
+    {
+        "id": "https://openalex.org/keywords/absolute-dating",
+        "display_name": "Absolute dating",
+        "score": 0.44169348
+    }
+    ],
+    "concepts": [
+    {
+        "id": "https://openalex.org/C100134115",
+        "wikidata": "https://www.wikidata.org/wiki/Q173412",
+        "display_name": "Radiocarbon dating",
+        "level": 2,
+        "score": 0.983261
+    },
+    {
+        "id": "https://openalex.org/C25868968",
+        "wikidata": "https://www.wikidata.org/wiki/Q1163945",
+        "display_name": "Macrofossil",
+        "level": 3,
+        "score": 0.8984016
+    },
+    {
+        "id": "https://openalex.org/C127313418",
+        "wikidata": "https://www.wikidata.org/wiki/Q1069",
+        "display_name": "Geology",
+        "level": 0,
+        "score": 0.6664145
+    },
+    {
+        "id": "https://openalex.org/C165838908",
+        "wikidata": "https://www.wikidata.org/wiki/Q736777",
+        "display_name": "Calibration",
+        "level": 2,
+        "score": 0.5833904
+    },
+    {
+        "id": "https://openalex.org/C23531484",
+        "wikidata": "https://www.wikidata.org/wiki/Q3196863",
+        "display_name": "Calibration curve",
+        "level": 3,
+        "score": 0.5645341
+    },
+    {
+        "id": "https://openalex.org/C166957645",
+        "wikidata": "https://www.wikidata.org/wiki/Q23498",
+        "display_name": "Archaeology",
+        "level": 1,
+        "score": 0.47706735
+    },
+    {
+        "id": "https://openalex.org/C100970517",
+        "wikidata": "https://www.wikidata.org/wiki/Q52107",
+        "display_name": "Physical geography",
+        "level": 1,
+        "score": 0.4560083
+    },
+    {
+        "id": "https://openalex.org/C24547453",
+        "wikidata": "https://www.wikidata.org/wiki/Q332423",
+        "display_name": "Absolute dating",
+        "level": 3,
+        "score": 0.44169348
+    },
+    {
+        "id": "https://openalex.org/C151730666",
+        "wikidata": "https://www.wikidata.org/wiki/Q7205",
+        "display_name": "Paleontology",
+        "level": 1,
+        "score": 0.37931666
+    },
+    {
+        "id": "https://openalex.org/C205649164",
+        "wikidata": "https://www.wikidata.org/wiki/Q1071",
+        "display_name": "Geography",
+        "level": 0,
+        "score": 0.18841061
+    },
+    {
+        "id": "https://openalex.org/C105795698",
+        "wikidata": "https://www.wikidata.org/wiki/Q12483",
+        "display_name": "Statistics",
+        "level": 1,
+        "score": 0.17201981
+    },
+    {
+        "id": "https://openalex.org/C140345934",
+        "wikidata": "https://www.wikidata.org/wiki/Q25445",
+        "display_name": "Holocene",
+        "level": 2,
+        "score": 0.1438114
+    },
+    {
+        "id": "https://openalex.org/C33923547",
+        "wikidata": "https://www.wikidata.org/wiki/Q395",
+        "display_name": "Mathematics",
+        "level": 0,
+        "score": 0.123862326
+    },
+    {
+        "id": "https://openalex.org/C119128265",
+        "wikidata": "https://www.wikidata.org/wiki/Q900165",
+        "display_name": "Detection limit",
+        "level": 2,
+        "score": 0.0
+    }
+    ],
+    "mesh": [],
+    "locations_count": 13,
+    "locations": [
+    {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2458/azu_js_rc.55.16947",
+        "pdf_url": null,
+        "source": {
+        "id": "https://openalex.org/S35778795",
+        "display_name": "Radiocarbon",
+        "issn_l": "0033-8222",
+        "issn": [
+            "0033-8222",
+            "1945-5755"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_indexed_in_scopus": true,
+        "is_core": true,
+        "host_organization": "https://openalex.org/P4310311721",
+        "host_organization_name": "Cambridge University Press",
+        "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+        ],
+        "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+        ],
+        "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+    },
+    {
+        "is_oa": true,
+        "landing_page_url": "https://hal.archives-ouvertes.fr/hal-02470111",
+        "pdf_url": "https://hal.science/hal-02470111/document",
+        "source": {
+        "id": "https://openalex.org/S4306402512",
+        "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_indexed_in_scopus": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I1294671590",
+        "host_organization_name": "Centre National de la Recherche Scientifique",
+        "host_organization_lineage": [
+            "https://openalex.org/I1294671590"
+        ],
+        "host_organization_lineage_names": [
+            "Centre National de la Recherche Scientifique"
+        ],
+        "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+    },
+    {
+        "is_oa": true,
+        "landing_page_url": "https://pureadmin.qub.ac.uk/ws/files/11128199/INTCAL13_AND_MARINE13_RADIOCARBON_AGE_CALIBRATION_CURVES.pdf",
+        "pdf_url": "https://pureadmin.qub.ac.uk/ws/files/11128199/INTCAL13_AND_MARINE13_RADIOCARBON_AGE_CALIBRATION_CURVES.pdf",
+        "source": {
+        "id": "https://openalex.org/S4306402319",
+        "display_name": "Research Portal (Queen's University Belfast)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_indexed_in_scopus": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I126231945",
+        "host_organization_name": "Queen's University Belfast",
+        "host_organization_lineage": [
+            "https://openalex.org/I126231945"
+        ],
+        "host_organization_lineage_names": [
+            "Queen's University Belfast"
+        ],
+        "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+    },
+    {
+        "is_oa": true,
+        "landing_page_url": "http://hdl.handle.net/1893/19275",
+        "pdf_url": "http://dspace.stir.ac.uk/bitstream/1893/19275/1/Reimer%20et%20al%202009.pdf",
+        "source": {
+        "id": "https://openalex.org/S4306400268",
+        "display_name": "Stirling Online Research Repository (University of Stirling)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_indexed_in_scopus": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I12093191",
+        "host_organization_name": "University of Stirling",
+        "host_organization_lineage": [
+            "https://openalex.org/I12093191"
+        ],
+        "host_organization_lineage_names": [
+            "University of Stirling"
+        ],
+        "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+    },
+    {
+        "is_oa": true,
+        "landing_page_url": "https://pure.qub.ac.uk/en/publications/97f208d4-524a-45c5-a7a3-ef3f3e7a1f39",
+        "pdf_url": "https://pure.qub.ac.uk/files/11128199/INTCAL13_AND_MARINE13_RADIOCARBON_AGE_CALIBRATION_CURVES.pdf",
+        "source": {
+        "id": "https://openalex.org/S4306402319",
+        "display_name": "Research Portal (Queen's University Belfast)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_indexed_in_scopus": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I126231945",
+        "host_organization_name": "Queen's University Belfast",
+        "host_organization_lineage": [
+            "https://openalex.org/I126231945"
+        ],
+        "host_organization_lineage_names": [
+            "Queen's University Belfast"
+        ],
+        "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+    },
+    {
+        "is_oa": true,
+        "landing_page_url": "https://hal.science/hal-02470111/file/13-and-marine13-radiocarbon-age-calibration-curves-0-50-000-years-cal-bp-div.pdf",
+        "pdf_url": "https://hal.science/hal-02470111/file/13-and-marine13-radiocarbon-age-calibration-curves-0-50-000-years-cal-bp-div.pdf",
+        "source": {
+        "id": "https://openalex.org/S4306402512",
+        "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_indexed_in_scopus": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I1294671590",
+        "host_organization_name": "Centre National de la Recherche Scientifique",
+        "host_organization_lineage": [
+            "https://openalex.org/I1294671590"
+        ],
+        "host_organization_lineage_names": [
+            "Centre National de la Recherche Scientifique"
+        ],
+        "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+    },
+    {
+        "is_oa": true,
+        "landing_page_url": "https://pure.rug.nl/ws/files/2384181/2013RadiocarbonReimer1.pdf",
+        "pdf_url": "https://pure.rug.nl/ws/files/2384181/2013RadiocarbonReimer1.pdf",
+        "source": {
+        "id": "https://openalex.org/S4306400420",
+        "display_name": "University of Groningen research database (University of Groningen / Centre for Information Technology)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_indexed_in_scopus": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I169381384",
+        "host_organization_name": "University of Groningen",
+        "host_organization_lineage": [
+            "https://openalex.org/I169381384"
+        ],
+        "host_organization_lineage_names": [
+            "University of Groningen"
+        ],
+        "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+    },
+    {
+        "is_oa": true,
+        "landing_page_url": "https://hal.archives-ouvertes.fr/hal-02470111/document",
+        "pdf_url": "https://hal.archives-ouvertes.fr/hal-02470111/document",
+        "source": {
+        "id": "https://openalex.org/S4306402512",
+        "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_indexed_in_scopus": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I1294671590",
+        "host_organization_name": "Centre National de la Recherche Scientifique",
+        "host_organization_lineage": [
+            "https://openalex.org/I1294671590"
+        ],
+        "host_organization_lineage_names": [
+            "Centre National de la Recherche Scientifique"
+        ],
+        "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+    },
+    {
+        "is_oa": true,
+        "landing_page_url": "https://pure.rug.nl/ws/files/6742017/2009RadiocarbonReimer.pdf",
+        "pdf_url": "https://pure.rug.nl/ws/files/6742017/2009RadiocarbonReimer.pdf",
+        "source": {
+        "id": "https://openalex.org/S4306400420",
+        "display_name": "University of Groningen research database (University of Groningen / Centre for Information Technology)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_indexed_in_scopus": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I169381384",
+        "host_organization_name": "University of Groningen",
+        "host_organization_lineage": [
+            "https://openalex.org/I169381384"
+        ],
+        "host_organization_lineage_names": [
+            "University of Groningen"
+        ],
+        "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+    },
+    {
+        "is_oa": true,
+        "landing_page_url": "https://hal.archives-ouvertes.fr/hal-02470111/file/13-and-marine13-radiocarbon-age-calibration-curves-0-50-000-years-cal-bp-div.pdf",
+        "pdf_url": "https://hal.archives-ouvertes.fr/hal-02470111/file/13-and-marine13-radiocarbon-age-calibration-curves-0-50-000-years-cal-bp-div.pdf",
+        "source": {
+        "id": "https://openalex.org/S4306402512",
+        "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_indexed_in_scopus": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I1294671590",
+        "host_organization_name": "Centre National de la Recherche Scientifique",
+        "host_organization_lineage": [
+            "https://openalex.org/I1294671590"
+        ],
+        "host_organization_lineage_names": [
+            "Centre National de la Recherche Scientifique"
+        ],
+        "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+    },
+    {
+        "is_oa": true,
+        "landing_page_url": "https://hdl.handle.net/10289/8955",
+        "pdf_url": "https://researchcommons.waikato.ac.nz/bitstream/10289/8955/1/2013%20reimer%20bard%20bayliss%20hogg%20et%20al%20radiocarbon.pdf",
+        "source": {
+        "id": "https://openalex.org/S4306400944",
+        "display_name": "Research Commons (University of Waikato)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_indexed_in_scopus": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I52179390",
+        "host_organization_name": "University of Waikato",
+        "host_organization_lineage": [
+            "https://openalex.org/I52179390"
+        ],
+        "host_organization_lineage_names": [
+            "University of Waikato"
+        ],
+        "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+    },
+    {
+        "is_oa": true,
+        "landing_page_url": "https://pure.rug.nl/ws/files/2384180/2013RadiocarbonReimer1SuppF.pdf",
+        "pdf_url": "https://pure.rug.nl/ws/files/2384180/2013RadiocarbonReimer1SuppF.pdf",
+        "source": {
+        "id": "https://openalex.org/S4306400420",
+        "display_name": "University of Groningen research database (University of Groningen / Centre for Information Technology)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_indexed_in_scopus": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I169381384",
+        "host_organization_name": "University of Groningen",
+        "host_organization_lineage": [
+            "https://openalex.org/I169381384"
+        ],
+        "host_organization_lineage_names": [
+            "University of Groningen"
+        ],
+        "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+    },
+    {
+        "is_oa": true,
+        "landing_page_url": "https://research.rug.nl/en/publications/cec311c1-2fa9-4abc-8f58-c1fe358f1fcd",
+        "pdf_url": "https://research.rug.nl/files/2384180/2013RadiocarbonReimer1SuppF.pdf",
+        "source": {
+        "id": "https://openalex.org/S4306400420",
+        "display_name": "University of Groningen research database (University of Groningen / Centre for Information Technology)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_indexed_in_scopus": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I169381384",
+        "host_organization_name": "University of Groningen",
+        "host_organization_lineage": [
+            "https://openalex.org/I169381384"
+        ],
+        "host_organization_lineage_names": [
+            "University of Groningen"
+        ],
+        "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+    }
+    ],
+    "best_oa_location": {
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.2458/azu_js_rc.55.16947",
+    "pdf_url": null,
+    "source": {
+        "id": "https://openalex.org/S35778795",
+        "display_name": "Radiocarbon",
+        "issn_l": "0033-8222",
+        "issn": [
+        "0033-8222",
+        "1945-5755"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_indexed_in_scopus": true,
+        "is_core": true,
+        "host_organization": "https://openalex.org/P4310311721",
+        "host_organization_name": "Cambridge University Press",
+        "host_organization_lineage": [
+        "https://openalex.org/P4310311721",
+        "https://openalex.org/P4310311702"
+        ],
+        "host_organization_lineage_names": [
+        "Cambridge University Press",
+        "University of Cambridge"
+        ],
+        "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true
+    },
+    "sustainable_development_goals": [
+    {
+        "score": 0.88,
+        "id": "https://metadata.un.org/sdg/14",
+        "display_name": "Life below water"
+    }
+    ],
+    "grants": [],
+    "datasets": [],
+    "versions": [],
+    "referenced_works_count": 65,
+    "referenced_works": [
+    "https://openalex.org/W1529443799",
+    "https://openalex.org/W163198",
+    "https://openalex.org/W1676292051",
+    "https://openalex.org/W1747045236",
+    "https://openalex.org/W1901577464",
+    "https://openalex.org/W1909880476",
+    "https://openalex.org/W1910478406",
+    "https://openalex.org/W1918344794",
+    "https://openalex.org/W1942153202",
+    "https://openalex.org/W1963757124",
+    "https://openalex.org/W1968796659",
+    "https://openalex.org/W1971255434",
+    "https://openalex.org/W1977042156",
+    "https://openalex.org/W1977355907",
+    "https://openalex.org/W1980012339",
+    "https://openalex.org/W1991447961",
+    "https://openalex.org/W1991537472",
+    "https://openalex.org/W1993219513",
+    "https://openalex.org/W1993516320",
+    "https://openalex.org/W1999531263",
+    "https://openalex.org/W2002284966",
+    "https://openalex.org/W2002717360",
+    "https://openalex.org/W2002717773",
+    "https://openalex.org/W2006481043",
+    "https://openalex.org/W2013668561",
+    "https://openalex.org/W2020177194",
+    "https://openalex.org/W2021944208",
+    "https://openalex.org/W2021986570",
+    "https://openalex.org/W2037304784",
+    "https://openalex.org/W2040578134",
+    "https://openalex.org/W2042478259",
+    "https://openalex.org/W2042671618",
+    "https://openalex.org/W2045406828",
+    "https://openalex.org/W2051658103",
+    "https://openalex.org/W2053962049",
+    "https://openalex.org/W2063176407",
+    "https://openalex.org/W2067438296",
+    "https://openalex.org/W2070363372",
+    "https://openalex.org/W2077457915",
+    "https://openalex.org/W2087582584",
+    "https://openalex.org/W2104726485",
+    "https://openalex.org/W2107118634",
+    "https://openalex.org/W2108394745",
+    "https://openalex.org/W2111073855",
+    "https://openalex.org/W2112848392",
+    "https://openalex.org/W2117187694",
+    "https://openalex.org/W2118271033",
+    "https://openalex.org/W2119105175",
+    "https://openalex.org/W2119637832",
+    "https://openalex.org/W2124958235",
+    "https://openalex.org/W2135214253",
+    "https://openalex.org/W2135968554",
+    "https://openalex.org/W2136090939",
+    "https://openalex.org/W2138883883",
+    "https://openalex.org/W2141972425",
+    "https://openalex.org/W2145725460",
+    "https://openalex.org/W2145761632",
+    "https://openalex.org/W2158905005",
+    "https://openalex.org/W2162580064",
+    "https://openalex.org/W2228637724",
+    "https://openalex.org/W2762086252",
+    "https://openalex.org/W3216360278",
+    "https://openalex.org/W4211094671",
+    "https://openalex.org/W4211135859",
+    "https://openalex.org/W4256135186"
+    ],
+    "related_works": [
+    "https://openalex.org/W851451795",
+    "https://openalex.org/W4396965100",
+    "https://openalex.org/W4292661205",
+    "https://openalex.org/W4248501869",
+    "https://openalex.org/W2559638261",
+    "https://openalex.org/W2550438163",
+    "https://openalex.org/W2487065750",
+    "https://openalex.org/W2307354226",
+    "https://openalex.org/W2037550159",
+    "https://openalex.org/W1983680415"
+    ],
+    "abstract_inverted_index": {
+    "The": [
+        0,
+        30,
+        62,
+        84
+    ],
+    "IntCal09": [
+        1,
+        47
+    ],
+    "and": [
+        2,
+        13,
+        28,
+        48,
+        59,
+        76
+    ],
+    "Marine09": [
+        3
+    ],
+    "radiocarbon": [
+        4
+    ],
+    "calibration": [
+        5,
+        31
+    ],
+    "curves": [
+        6,
+        32,
+        64
+    ],
+    "have": [
+        7
+    ],
+    "been": [
+        8,
+        52
+    ],
+    "revised": [
+        9,
+        53
+    ],
+    "utilizing": [
+        10
+    ],
+    "newly": [
+        11
+    ],
+    "available": [
+        12,
+        78
+    ],
+    "updated": [
+        14
+    ],
+    "data": [
+        15,
+        37
+    ],
+    "sets": [
+        16
+    ],
+    "from": [
+        17,
+        35
+    ],
+    "14": [
+        18
+    ],
+    "C": [
+        19
+    ],
+    "measurements": [
+        20
+    ],
+    "on": [
+        21
+    ],
+    "tree": [
+        22
+    ],
+    "rings,": [
+        23
+    ],
+    "plant": [
+        24
+    ],
+    "macrofossils,": [
+        25
+    ],
+    "speleothems,": [
+        26
+    ],
+    "corals,": [
+        27
+    ],
+    "foraminifera.": [
+        29
+    ],
+    "were": [
+        33,
+        65
+    ],
+    "derived": [
+        34
+    ],
+    "the": [
+        36,
+        39,
+        68
+    ],
+    "using": [
+        38
+    ],
+    "random": [
+        40
+    ],
+    "walk": [
+        41
+    ],
+    "model": [
+        42
+    ],
+    "(RWM)": [
+        43
+    ],
+    "used": [
+        44
+    ],
+    "to": [
+        45,
+        54
+    ],
+    "generate": [
+        46
+    ],
+    "Marine09,": [
+        49
+    ],
+    "which": [
+        50
+    ],
+    "has": [
+        51
+    ],
+    "account": [
+        55
+    ],
+    "for": [
+        56
+    ],
+    "additional": [
+        57
+    ],
+    "uncertainties": [
+        58
+    ],
+    "error": [
+        60
+    ],
+    "structures.": [
+        61
+    ],
+    "new": [
+        63
+    ],
+    "ratified": [
+        66
+    ],
+    "at": [
+        67,
+        82,
+        89
+    ],
+    "21st": [
+        69
+    ],
+    "International": [
+        70
+    ],
+    "Radiocarbon": [
+        71
+    ],
+    "conference": [
+        72
+    ],
+    "in": [
+        73
+    ],
+    "July": [
+        74
+    ],
+    "2012": [
+        75
+    ],
+    "are": [
+        77
+    ],
+    "as": [
+        79
+    ],
+    "Supplemental": [
+        80
+    ],
+    "Material": [
+        81
+    ],
+    "www.radiocarbon.org.": [
+        83
+    ],
+    "database": [
+        85
+    ],
+    "can": [
+        86
+    ],
+    "be": [
+        87
+    ],
+    "accessed": [
+        88
+    ],
+    "http://intcal.qub.ac.uk/intcal13/.": [
+        90
+    ]
+    },
+    "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W4249751050",
+    "counts_by_year": [
+    {
+        "year": 2024,
+        "cited_by_count": 12
+    },
+    {
+        "year": 2023,
+        "cited_by_count": 15
+    },
+    {
+        "year": 2022,
+        "cited_by_count": 44
+    },
+    {
+        "year": 2021,
+        "cited_by_count": 820
+    },
+    {
+        "year": 2020,
+        "cited_by_count": 1594
+    },
+    {
+        "year": 2019,
+        "cited_by_count": 1408
+    },
+    {
+        "year": 2018,
+        "cited_by_count": 1342
+    },
+    {
+        "year": 2017,
+        "cited_by_count": 1468
+    },
+    {
+        "year": 2016,
+        "cited_by_count": 1273
+    },
+    {
+        "year": 2015,
+        "cited_by_count": 1196
+    },
+    {
+        "year": 2014,
+        "cited_by_count": 1106
+    },
+    {
+        "year": 2013,
+        "cited_by_count": 976
+    },
+    {
+        "year": 2012,
+        "cited_by_count": 775
+    }
+    ],
+    "updated_date": "2025-08-14T12:21:51.224496",
+    "created_date": "2022-05-12"
+}
