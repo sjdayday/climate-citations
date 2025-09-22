@@ -29,5 +29,13 @@ class TestOpenAlexClientNetwork(unittest.TestCase):
             first_work = works[0]
             print(f"{first_work.id} - {first_work.title!r} ({first_work.publication_year})")
 
+    def test_get_work(self):
+        work = self.client.get_work("W4249751050")
+        self.assertIsInstance(work, Work)
+        self.assertEqual(work.id, "https://openalex.org/W4249751050")
+        self.assertEqual(work.title, "IntCal13 and Marine13 Radiocarbon Age Calibration Curves 0–50,000 Years cal BP")
+        self.assertEqual(work.publication_year, 2013)
+
+
 if __name__ == "__main__":
     unittest.main()
