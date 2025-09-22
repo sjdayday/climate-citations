@@ -26,6 +26,7 @@ class Work:
     referenced_works: Optional[List[str]] = None
     publication_year: Optional[int] = None
     doi: Optional[str] = None
+    cited_by_count: Optional[int] = None
 
 
 class OpenAlexClient:
@@ -60,13 +61,7 @@ class OpenAlexClient:
             data = self._get(path, params=params)
             items = data.get("results", [])
             for i in items:
-                w = Work(
-                    id=i.get("id"),
-                    title=i.get("title"),
-                    referenced_works=i.get("referenced_works"),
-                    publication_year=i.get("publication_year"),
-                    doi=i.get("doi"),
-                )
+                w = self.build_work(i)
                 results_list.append(w)
                 collected += 1
                 if max_items and collected >= max_items:
@@ -82,10 +77,14 @@ class OpenAlexClient:
         # Accept 'W12345' or full path/URL
         path = f"/works/{work_id}" if not str(work_id).startswith("/") and not str(work_id).startswith("http") else work_id
         data = self._get(path)
+        return self.build_work(data)
+    
+    def build_work(self, data: Dict[str, Any]) -> Work:
         return Work(
             id=data.get("id"),
             title=data.get("title"),
             referenced_works=data.get("referenced_works"),
             publication_year=data.get("publication_year"),
             doi=data.get("doi"),
+            cited_by_count=data.get("cited_by_count"),
         )

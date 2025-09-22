@@ -52,6 +52,7 @@ class TestOpenAlexClient(unittest.TestCase):
         self.assertEqual(work.id, "https://openalex.org/W4249751050")
         self.assertEqual(work.title, "IntCal13 and Marine13 Radiocarbon Age Calibration Curves 0–50,000 Years cal BP")
         self.assertEqual(work.publication_year, 2013)
+        self.assertEqual(work.cited_by_count, 12706)
         self.mp.undo()
 
     def _get_returns_file_contents(self, filename: str) -> dict:
