@@ -4,6 +4,7 @@ Adjust filter keys if OpenAlex filter names change (e.g. 'topics.id' vs 'topic.i
 """
 from dataclasses import dataclass
 from typing import List, Optional, Iterator, Dict, Any
+import csv
 
 # prefer the concrete topic client in this package
 from .openalex_topic_client import OpenAlexTopicClient as _UnderlyingClient
@@ -100,3 +101,15 @@ class OpenAlexClient:
         for ref in work.references:
             edges.append(ReferenceEdge(from_work=work.id, referenced_work=ref))
         return edges
+
+    def write_reference_edges(self, referenceEdges: List[ReferenceEdge], filename: str) -> None:
+        """
+        Write a list of ReferenceEdge to a CSV file.
+        Each row: from_work, referenced_work
+        Appends to file if it exists, otherwise creates it.
+        """
+        # open with newline='' to prevent extra blank lines on Windows/macOS
+        with open(filename, "a", newline="", encoding="utf-8") as fh:
+            writer = csv.writer(fh)
+            for edge in referenceEdges:
+                writer.writerow([edge.from_work, edge.referenced_work])

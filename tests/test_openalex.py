@@ -1,9 +1,15 @@
 import unittest
 import json
 import os
+import csv
 
 from pytest import MonkeyPatch
-from climate_citations.openalex import OpenAlexClient, Topic, Work, ReferenceEdge
+from climate_citations.openalex import (
+    OpenAlexClient,
+    Topic,
+    Work,
+    ReferenceEdge,
+)
 
 class TestOpenAlexClient(unittest.TestCase):
 
@@ -74,6 +80,45 @@ class TestOpenAlexClient(unittest.TestCase):
         self.assertEqual(edges[0].referenced_work, "https://openalex.org/W1529443799")
         self.assertEqual(edges[-1].referenced_work, "https://openalex.org/W4256135186")
         self.mp.undo()
+
+    def test_write_reference_edges(self):
+        # prepare sample work via helper that monkeypatches _get
+        self._get_returns_file_contents("sample_work.json")
+        work = self.client.get_work("W4249751050")
+        self.assertIsInstance(work, Work)
+
+        edges = self.client.build_reference_edges(work)
+        self.assertIsInstance(edges, list)
+        self.assertGreater(len(edges), 0)
+
+        tests_dir = os.path.dirname(__file__)
+        csv_path = os.path.join(tests_dir, "test_reference_edges.csv")
+
+        # ensure clean start
+        if os.path.exists(csv_path):
+            os.remove(csv_path)
+
+        try:
+            self.client.write_reference_edges(edges, csv_path)
+
+            # read back CSV
+            with open(csv_path, "r", encoding="utf-8") as fh:
+                reader = list(csv.reader(fh))
+            # number of CSV lines should match number of edges written
+            self.assertEqual(len(reader), len(edges))
+
+            # verify first and last rows match the first and last ReferenceEdge
+            first_row = reader[0]
+            last_row = reader[-1]
+            self.assertEqual(first_row[0], edges[0].from_work)
+            self.assertEqual(first_row[1], edges[0].referenced_work)
+            self.assertEqual(last_row[0], edges[-1].from_work)
+            self.assertEqual(last_row[1], edges[-1].referenced_work)
+        finally:
+            # cleanup and restore monkeypatch
+            if os.path.exists(csv_path):
+                os.remove(csv_path)
+            self.mp.undo()
 
     def _get_returns_file_contents(self, filename: str) -> dict:
         path = os.path.join(os.path.dirname(__file__), filename)
