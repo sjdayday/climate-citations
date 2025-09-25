@@ -14,7 +14,6 @@ class TestOpenAlexClient(unittest.TestCase):
     def setUp(self):
         self.client = OpenAlexClient()
         self.mp = MonkeyPatch()
-        self.talker = NetworkFileTalker()
         print(f"Running test: {self._testMethodName}")
 
 
@@ -69,8 +68,8 @@ class TestOpenAlexClient(unittest.TestCase):
         self._get_returns_file_contents("sample_work.json")
         work = self.client.get_work("W4249751050")
         self.assertIsInstance(work, Work)
-
-        edges: List[ReferenceEdge] = self.talker.build_reference_edges(work)
+        talker = NetworkFileTalker()    
+        edges: List[ReferenceEdge] = talker.build_reference_edges(work)
         self.assertIsInstance(edges, list)
         self.assertEqual(len(edges), 65)
         self.assertEqual(edges[0].from_work, work.id)
@@ -81,14 +80,16 @@ class TestOpenAlexClient(unittest.TestCase):
     def test_write_reference_edges(self):
         self._get_returns_file_contents("sample_work.json")
         work = self.client.get_work("W4249751050")
-        edges = self.talker.build_reference_edges(work)
-
         tests_dir = os.path.dirname(__file__)
         csv_path = os.path.join(tests_dir, "test_reference_edges.csv")
+
+        talker = NetworkFileTalker(reference_edge_file=csv_path)
+        edges = talker.build_reference_edges(work)
+
         if os.path.exists(csv_path):
             os.remove(csv_path)
         try:
-            self.talker.write_reference_edges(edges, csv_path)
+            talker.write_reference_edges(edges, csv_path)
             with open(csv_path, "r", encoding="utf-8") as fh:
                 rows = list(csv.reader(fh))
             self.assertEqual(len(rows), len(edges))

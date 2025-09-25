@@ -8,19 +8,20 @@ class TestNetworkFileTalker(unittest.TestCase):
     def test_write_file(self):
         tests_dir = os.path.dirname(__file__)
         sample_path = os.path.join(tests_dir, "sample_works_list.json")
+        test_file = os.path.join(tests_dir, "test-file")
 
-        nf = NetworkFileTalker()
+        nf = NetworkFileTalker(json_out_file=test_file)
 
         # Use read_file to produce the input list from the sample file
         input_list = nf.read_file(sample_path)
 
-        test_file = os.path.join(tests_dir, "test-file")
+
 
         # Ensure clean start
         if os.path.exists(test_file):
             os.remove(test_file)
 
-        nf.write_list(input_list, test_file)
+        nf.write_list(input_list)
 
         # Read back file using NetworkFileTalker.read_file
         output_list = nf.read_file(test_file)

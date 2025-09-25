@@ -1,7 +1,8 @@
 from dataclasses import dataclass
 import json
 import csv
-from typing import List, Any
+import requests
+from typing import List, Any, Optional
 from json import JSONDecoder, JSONDecodeError
 
 # New dataclass for an edge (from_work -> referenced_work)
@@ -15,15 +16,19 @@ class ReferenceEdge:
 
 class NetworkFileTalker:
     """
-    Simple file writer / reader for newline-delimited or concatenated JSON records.
+        Simple file writer / reader for newline-delimited or concatenated JSON records.
     """
+    def __init__(self, json_out_file: Optional[str] = "json_out_file.txt", reference_edge_file: Optional[str] = "reference_edges.csv"):
+        self.json_out_file = json_out_file
+        self.reference_edge_file = reference_edge_file    
 
-    def write_list(self, object_list: List[Any], filename: str) -> None:
+    def write_list(self, object_list: List[Any], filename: Optional[str] = None) -> None:
         """
         Write each object in object_list as one JSON object per line to filename.
-        If the file exists, append; otherwise create it.
+        If filename is None, use self.json_out_file. Append if file exists.
         """
-        with open(filename, "a", encoding="utf-8") as fh:
+        target = filename or self.json_out_file
+        with open(target, "a", encoding="utf-8") as fh:
             for obj in object_list:
                 fh.write(json.dumps(obj, ensure_ascii=False) + "\n")
 
@@ -85,13 +90,13 @@ class NetworkFileTalker:
             edges.append(ReferenceEdge(from_work=getattr(work, "id"), referenced_work=r))
         return edges
 
-
-    def write_reference_edges(self, reference_edges: List[ReferenceEdge], filename: str) -> None:
+    def write_reference_edges(self, reference_edges: List[ReferenceEdge], filename: Optional[str] = None) -> None:
         """
         Write ReferenceEdge list to CSV file (from_work, referenced_work).
-        Append if file exists, create otherwise.
+        If filename is None, use self.reference_edge_file. Append if file exists.
         """
-        with open(filename, "a", newline="", encoding="utf-8") as fh:
+        target = filename or self.reference_edge_file
+        with open(target, "a", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
             for e in reference_edges:
                 writer.writerow([e.from_work, e.referenced_work])
