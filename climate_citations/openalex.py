@@ -90,13 +90,13 @@ class OpenAlexClient:
         return self.build_work(data)
 
 
-def build_reference_edges(work: Work) -> List[ReferenceEdge]:
-    """
-    Given a Work, build a list of ReferenceEdge objects, one per referenced work.
-    """
-    if not work or not work.references:
-        return []
-    edges: List[ReferenceEdge] = []
-    for ref in work.references:
-        edges.append(ReferenceEdge(from_work=work.id, referenced_work=ref))
-    return edges
+    def build_reference_edges(self, work: Work) -> List[ReferenceEdge]:
+        """
+        Given a Work, build a list of ReferenceEdge objects, one per referenced work.
+        """
+        if not work or not work.references:
+            return []
+        edges: List[ReferenceEdge] = []
+        for ref in work.references:
+            edges.append(ReferenceEdge(from_work=work.id, referenced_work=ref))
+        return edges

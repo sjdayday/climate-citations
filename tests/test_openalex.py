@@ -3,7 +3,7 @@ import json
 import os
 
 from pytest import MonkeyPatch
-from climate_citations.openalex import OpenAlexClient, Topic, Work, ReferenceEdge, build_reference_edges
+from climate_citations.openalex import OpenAlexClient, Topic, Work, ReferenceEdge
 
 class TestOpenAlexClient(unittest.TestCase):
 
@@ -66,7 +66,7 @@ class TestOpenAlexClient(unittest.TestCase):
         work = self.client.get_work("W4249751050")
         self.assertIsInstance(work, Work)
 
-        edges = build_reference_edges(work)
+        edges = self.client.build_reference_edges(work)
         self.assertIsInstance(edges, list)
         # Expected assertions based on sample_work.json
         self.assertEqual(len(edges), 65)
