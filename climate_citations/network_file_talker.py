@@ -1,6 +1,16 @@
+from dataclasses import dataclass
 import json
+import csv
 from typing import List, Any
 from json import JSONDecoder, JSONDecodeError
+
+# New dataclass for an edge (from_work -> referenced_work)
+@dataclass
+class ReferenceEdge:
+    from_work: str
+    referenced_work: str
+
+# Note: build_reference_edges and write_reference_edge(s) moved to network_file_talker.py
 
 
 class NetworkFileTalker:
@@ -59,3 +69,29 @@ class NetworkFileTalker:
                 continue
 
         return objs
+
+    def build_reference_edges(self, work: Any) -> List[ReferenceEdge]:
+        """
+        Build ReferenceEdge objects from a Work-like object.
+        Accepts objects with attribute 'id' and either 'references' or 'referenced_works'.
+        """
+        refs = getattr(work, "references", None)
+        if refs is None:
+            refs = getattr(work, "referenced_works", None)
+        if not refs:
+            return []
+        edges: List[ReferenceEdge] = []
+        for r in refs:
+            edges.append(ReferenceEdge(from_work=getattr(work, "id"), referenced_work=r))
+        return edges
+
+
+    def write_reference_edges(self, reference_edges: List[ReferenceEdge], filename: str) -> None:
+        """
+        Write ReferenceEdge list to CSV file (from_work, referenced_work).
+        Append if file exists, create otherwise.
+        """
+        with open(filename, "a", newline="", encoding="utf-8") as fh:
+            writer = csv.writer(fh)
+            for e in reference_edges:
+                writer.writerow([e.from_work, e.referenced_work])

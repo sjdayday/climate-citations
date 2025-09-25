@@ -4,10 +4,10 @@ Adjust filter keys if OpenAlex filter names change (e.g. 'topics.id' vs 'topic.i
 """
 from dataclasses import dataclass
 from typing import List, Optional, Iterator, Dict, Any
-import csv
 
 # prefer the concrete topic client in this package
 from .openalex_topic_client import OpenAlexTopicClient as _UnderlyingClient
+from .network_file_talker import NetworkFileTalker 
 
 @dataclass
 class Topic:
@@ -25,13 +25,10 @@ class Work:
     doi: Optional[str] = None
     cited_by_count: Optional[int] = None
 
-# New dataclass for an edge (from_work -> referenced_work)
-@dataclass
-class ReferenceEdge:
-    from_work: str
-    referenced_work: str
 
 class OpenAlexClient:
+    network_file_talker: NetworkFileTalker  
+
     def __init__(self, *args, **kwargs):
         self._client = _UnderlyingClient(*args, **kwargs)
 
@@ -64,6 +61,25 @@ class OpenAlexClient:
             for r in data.get("results", []):
                 yield Topic(id=r.get("id"), display_name=r.get("display_name"), level=r.get("level"))
 
+    def build_works_and_network_for_page(self, items: List[Dict[str, Any]], build_network: bool, results_list: List[Work], collected: int, max_items: Optional[int]):
+        """
+        Helper to process a page of work items: build Work objects, append to results_list,
+        update collected count, and return (results_list, collected, done_flag).
+        If max_items is reached, done_flag is True and the caller should stop.
+        """
+        page_work_list: List[Work] = []
+        max_reached = False
+        for i in items:
+            w = self.build_work(i)
+            results_list.append(w)
+            page_work_list.append(w)
+            collected += 1
+            if max_items and collected >= max_items:
+                max_reached = True
+                break
+        
+        return results_list, collected, max_reached
+
     def get_works_for_topic(self, topic_id: str, per_page: int = 25, max_items: Optional[int] = None) -> List[Work]:
         results_list: List[Work] = []
         page = 1
@@ -73,12 +89,10 @@ class OpenAlexClient:
             path = f"/topics/{topic_id}/works"
             data = self._get(path, params=params)
             items = data.get("results", [])
-            for i in items:
-                w = self.build_work(i)
-                results_list.append(w)
-                collected += 1
-                if max_items and collected >= max_items:
-                    return results_list
+            # refactored: process items via helper
+            results_list, collected, done = self.build_works_and_network_for_page(items, False, results_list, collected, max_items)
+            if done:
+                return results_list
             meta = data.get("meta", {})
             if not meta.get("next_page") and len(items) < per_page:
                 break
@@ -89,27 +103,3 @@ class OpenAlexClient:
         path = f"/works/{work_id}" if not str(work_id).startswith("/") and not str(work_id).startswith("http") else work_id
         data = self._get(path)
         return self.build_work(data)
-
-
-    def build_reference_edges(self, work: Work) -> List[ReferenceEdge]:
-        """
-        Given a Work, build a list of ReferenceEdge objects, one per referenced work.
-        """
-        if not work or not work.references:
-            return []
-        edges: List[ReferenceEdge] = []
-        for ref in work.references:
-            edges.append(ReferenceEdge(from_work=work.id, referenced_work=ref))
-        return edges
-
-    def write_reference_edges(self, referenceEdges: List[ReferenceEdge], filename: str) -> None:
-        """
-        Write a list of ReferenceEdge to a CSV file.
-        Each row: from_work, referenced_work
-        Appends to file if it exists, otherwise creates it.
-        """
-        # open with newline='' to prevent extra blank lines on Windows/macOS
-        with open(filename, "a", newline="", encoding="utf-8") as fh:
-            writer = csv.writer(fh)
-            for edge in referenceEdges:
-                writer.writerow([edge.from_work, edge.referenced_work])
