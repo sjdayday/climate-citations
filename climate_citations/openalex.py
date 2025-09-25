@@ -4,13 +4,9 @@ Adjust filter keys if OpenAlex filter names change (e.g. 'topics.id' vs 'topic.i
 """
 from dataclasses import dataclass
 from typing import List, Optional, Iterator, Dict, Any
-import requests
-import json
-import time
-from typing import Any, Dict, Optional
-# import the concrete client implementation
-from .openalex_topic_client import OpenAlexTopicClient as _UnderlyingClient
 
+# prefer the concrete topic client in this package
+from .openalex_topic_client import OpenAlexTopicClient as _UnderlyingClient
 
 @dataclass
 class Topic:
@@ -18,28 +14,44 @@ class Topic:
     display_name: Optional[str] = None
     level: Optional[int] = None
 
-
 @dataclass
 class Work:
     id: str
     title: Optional[str] = None
-    referenced_works: Optional[List[str]] = None
+    # New field populated from OpenAlex JSON "referenced_works"
+    references: Optional[List[str]] = None
     publication_year: Optional[int] = None
     doi: Optional[str] = None
     cited_by_count: Optional[int] = None
 
+# New dataclass for an edge (from_work -> referenced_work)
+@dataclass
+class ReferenceEdge:
+    from_work: str
+    referenced_work: str
 
 class OpenAlexClient:
     def __init__(self, *args, **kwargs):
-        # delegate to the topic client implementation
         self._client = _UnderlyingClient(*args, **kwargs)
 
     def _get(self, path: str, params: Optional[Dict[str, Any]] = None):
-        # avoid recursion by delegating to the underlying client's _get
         return self._client._get(path, params=params)
 
-    def get_topic(self, topic_id: str):
-        # Accept 'T12345' or full path/URL
+    def build_work(self, data: Dict[str, Any]) -> Work:
+        """
+        Build a Work dataclass from raw OpenAlex work JSON, including references
+        from the 'referenced_works' field.
+        """
+        return Work(
+            id=data.get("id"),
+            title=data.get("title"),
+            references=data.get("referenced_works") or [],
+            publication_year=data.get("publication_year"),
+            doi=data.get("doi"),
+            cited_by_count=data.get("cited_by_count"),
+        )
+
+    def get_topic(self, topic_id: str) -> Topic:
         path = f"/topics/{topic_id}" if not str(topic_id).startswith("/") and not str(topic_id).startswith("http") else topic_id
         data = self._get(path)
         return Topic(id=data.get("id"), display_name=data.get("display_name"), level=data.get("level"))
@@ -67,24 +79,24 @@ class OpenAlexClient:
                 if max_items and collected >= max_items:
                     return results_list
             meta = data.get("meta", {})
-            # stop if no next page or fewer results than page size
             if not meta.get("next_page") and len(items) < per_page:
                 break
             page += 1
         return results_list
 
-    def get_work(self, work_id: str):
-        # Accept 'W12345' or full path/URL
+    def get_work(self, work_id: str) -> Work:
         path = f"/works/{work_id}" if not str(work_id).startswith("/") and not str(work_id).startswith("http") else work_id
         data = self._get(path)
         return self.build_work(data)
-    
-    def build_work(self, data: Dict[str, Any]) -> Work:
-        return Work(
-            id=data.get("id"),
-            title=data.get("title"),
-            referenced_works=data.get("referenced_works"),
-            publication_year=data.get("publication_year"),
-            doi=data.get("doi"),
-            cited_by_count=data.get("cited_by_count"),
-        )
+
+
+def build_reference_edges(work: Work) -> List[ReferenceEdge]:
+    """
+    Given a Work, build a list of ReferenceEdge objects, one per referenced work.
+    """
+    if not work or not work.references:
+        return []
+    edges: List[ReferenceEdge] = []
+    for ref in work.references:
+        edges.append(ReferenceEdge(from_work=work.id, referenced_work=ref))
+    return edges

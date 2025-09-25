@@ -3,7 +3,7 @@ import json
 import os
 
 from pytest import MonkeyPatch
-from climate_citations.openalex import OpenAlexClient, Topic, Work
+from climate_citations.openalex import OpenAlexClient, Topic, Work, ReferenceEdge, build_reference_edges
 
 class TestOpenAlexClient(unittest.TestCase):
 
@@ -54,10 +54,25 @@ class TestOpenAlexClient(unittest.TestCase):
         self.assertEqual(work.publication_year, 2013)
         self.assertEqual(work.cited_by_count, 12706)
         # New assertions about references field
-        self.assertIsNotNone(work.referenced_works)
-        self.assertEqual(len(work.referenced_works), 65)
-        self.assertEqual(work.referenced_works[0], "https://openalex.org/W1529443799")
-        self.assertEqual(work.referenced_works[-1], "https://openalex.org/W4256135186")
+        self.assertIsNotNone(work.references)
+        self.assertEqual(len(work.references), 65)
+        self.assertEqual(work.references[0], "https://openalex.org/W1529443799")
+        self.assertEqual(work.references[-1], "https://openalex.org/W4256135186")
+        self.mp.undo()
+
+    def test_build_reference_edges(self):
+        # Ensure _get is stubbed to return sample_work.json via helper
+        self._get_returns_file_contents("sample_work.json")
+        work = self.client.get_work("W4249751050")
+        self.assertIsInstance(work, Work)
+
+        edges = build_reference_edges(work)
+        self.assertIsInstance(edges, list)
+        # Expected assertions based on sample_work.json
+        self.assertEqual(len(edges), 65)
+        self.assertEqual(edges[0].from_work, work.id)
+        self.assertEqual(edges[0].referenced_work, "https://openalex.org/W1529443799")
+        self.assertEqual(edges[-1].referenced_work, "https://openalex.org/W4256135186")
         self.mp.undo()
 
     def _get_returns_file_contents(self, filename: str) -> dict:
