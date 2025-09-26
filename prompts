@@ -15,3 +15,12 @@ Please refactor these lines in openalex.py as method build_works_and_network_for
                 if max_items and collected >= max_items:
                     return results_list
 move methods build_reference_edges and write_reference_edges from openalex.py to network_file_talker.py, and update the corresponding tests.  
+Refactor these lines in openalex.py as method write_work_nodes_edges
+        self.talker.write_list(page_work_list, self.work_node_file)
+        for w in page_work_list:
+            edges: List[ReferenceEdge] = self.talker.build_reference_edges(w)
+        self.talker.write_reference_edges(edges, self.reference_edge_file)
+Please move write_work_nodes_edges from OpenAlexClient to NetworkFileTalker
+In test_network_file_talker, add a test for the write_work_nodes_edges method from NetworkFileTalker.  Model the test on test_write_file, using the sample_works_list 
+add NetworkFileTalker
+add boolean write 

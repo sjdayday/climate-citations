@@ -54,7 +54,6 @@ class NetworkFileTalker:
         text_len = len(text)
 
         while True:
-            # skip whitespace
             while idx < text_len and text[idx].isspace():
                 idx += 1
             if idx >= text_len:
@@ -64,8 +63,6 @@ class NetworkFileTalker:
                 objs.append(obj)
                 idx = end
             except JSONDecodeError:
-                # If we cannot decode at the current position, skip to the next newline
-                # and try again; this effectively ignores invalid fragments.
                 next_nl = text.find("\n", idx)
                 if next_nl == -1:
                     # no more newlines; give up
@@ -100,3 +97,43 @@ class NetworkFileTalker:
             writer = csv.writer(fh)
             for e in reference_edges:
                 writer.writerow([e.from_work, e.referenced_work])
+
+    def write_work_nodes_edges(self, page_work_list: List[Any], work_node_file: Optional[str] = None, reference_edge_file: Optional[str] = None) -> None:
+        """
+        Write a list of Work-like objects as newline JSON node records and collect/write
+        their ReferenceEdge CSV entries.
+        - Converts dataclass Work objects to dicts.
+        - Uses provided filenames or falls back to instance defaults.
+        """
+        if not page_work_list:
+            return
+
+        target_nodes = work_node_file or self.json_out_file
+        target_edges = reference_edge_file or self.reference_edge_file
+
+        # prepare node objects (convert dataclasses to dicts)
+        node_objs: List[Any] = []
+        # for w in page_work_list:
+        #     if is_dataclass(w):
+        #         node_objs.append(asdict(w))
+        #     elif isinstance(w, dict):
+        #         node_objs.append(w)
+        #     else:
+        #         # best-effort: try to serialize attributes
+        #         try:
+        #             node_objs.append(w.__dict__)
+        #         except Exception:
+        #             node_objs.append(str(w))
+
+        # write nodes
+        self.write_list(node_objs, target_nodes)
+
+        # collect and write edges
+        all_edges: List[ReferenceEdge] = []
+        for w in page_work_list:
+            edges = self.build_reference_edges(w)
+            if edges:
+                all_edges.extend(edges)
+
+        if all_edges:
+            self.write_reference_edges(all_edges, target_edges)
