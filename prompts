@@ -1,4 +1,4 @@
-chatgps: how can I download the citations for academic papers in climate science as a set of network nodes and arks, that later be displayed as a network?
+chatgpt: how can I download the citations for academic papers in climate science as a set of network nodes and arks, that later be displayed as a network?
 Starting from the python file openalex_citation_network.py, which builds an openalex citation network for climate science, create one or more new python files that use openalex topics instead of openalex concepts.  Structure the new files as  appropriate python objects.  
 Please create a test file, test_openalex.py, modeled on test_openalex_network.py, with a single test, test_get_topic, modeled on the same named method in test_openalex_network.py.  For the new test, use monkeypatching for the OpenAlexClient._get method.  The monkeypatched method should return the contents of file sample_topic.json
 Please add a method get_work to openalex.py, which retrieves an openalex Work, similar to the way get_topic retrieves an openalex Topic.  Add a test for get_work to test_openalex_network.py
@@ -21,6 +21,18 @@ Refactor these lines in openalex.py as method write_work_nodes_edges
             edges: List[ReferenceEdge] = self.talker.build_reference_edges(w)
         self.talker.write_reference_edges(edges, self.reference_edge_file)
 Please move write_work_nodes_edges from OpenAlexClient to NetworkFileTalker
-In test_network_file_talker, add a test for the write_work_nodes_edges method from NetworkFileTalker.  Model the test on test_write_file, using the sample_works_list 
-add NetworkFileTalker
-add boolean write 
+In test_network_file_talker, add a test for the write_work_nodes_edges method from NetworkFileTalker.  Model the test on test_write_file, using sample_works_list.json to create input_list List[Work], prior to calling write_work_nodes_edges(input_list)
+print the contents of test_file
+Create the following assertions:
+test_file has five records
+read test_file as output_list List[Work], and verify that output_list[0] id and display_names are the same as for input_list[0]
+expect the number of records reference_edges.csv to be 249.
+expect the first record in reference_edges.csv to be 
+"https://openalex.org/W4249751050,https://openalex.org/W1529443799"
+expect the last record in reference_edges.csv to be 
+"https://openalex.org/W2272473773,https://openalex.org/W118046694"
+
+Please add an optional string argument to read_file in NetworkFileTalker: "key".  Key is a json key at the highest level of the object.  Parse the value for "key" as a JSON object, and return the results.  On line 18 of test_write_file, pass in the key "results" to read_file 
+
+Please create test_build_works_and_network_for_page in test_openalex.py 
+https://citationgraph.org/graph/f8d4a103bf5fc90f

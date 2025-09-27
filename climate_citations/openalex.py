@@ -132,6 +132,7 @@ class OpenAlexClient:
         # convert dataclass Work objects to plain dicts for JSON serialization
         # node_objs = [asdict(w) for w in page_work_list]
         # self.talker.write_list(node_objs, self.work_node_file)
+        self.build_works_and_network_for_page(page_work_list, True, [], 0, None)
         self.talker.write_list(page_work_list, self.work_node_file)
 
         # collect all edges for this page and write them once
