@@ -24,6 +24,7 @@ class Work:
     publication_year: Optional[int] = None
     doi: Optional[str] = None
     cited_by_count: Optional[int] = None
+    best_oa_location__pdf_url: Optional[str] = None
 
 
 class OpenAlexClient:
@@ -53,6 +54,11 @@ class OpenAlexClient:
         Build a Work dataclass from raw OpenAlex work JSON, including references
         from the 'referenced_works' field.
         """
+        best_oa_location=data.get("best_oa_location", {})
+        if best_oa_location:
+            pdf_url = best_oa_location.get("pdf_url")
+        else:
+            pdf_url = None 
         return Work(
             id=data.get("id"),
             title=data.get("title"),
@@ -60,6 +66,7 @@ class OpenAlexClient:
             publication_year=data.get("publication_year"),
             doi=data.get("doi"),
             cited_by_count=data.get("cited_by_count"),
+            best_oa_location__pdf_url=pdf_url
         )
 
     def get_topic(self, topic_id: str) -> Topic:
